@@ -62,7 +62,7 @@ body {
 /* Main content */
 .main-content {
     min-height: calc(100vh - 140px);
-    padding: 3rem 0;
+    padding: 0.5rem 0 3rem 0;
 }
 
 .container {
@@ -114,9 +114,9 @@ body {
 /* Page styles */
 .page-header {
     text-align: center;
-    padding: 2rem 0;
+    padding: 0.5rem 0;
     border-bottom: 1px solid #e1e5e9;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .page-title {
