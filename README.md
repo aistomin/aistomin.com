@@ -18,7 +18,7 @@ This is where I write about things that interest me - mostly technology, innovat
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:aistomin/aistomin.com.git
    cd aistomin.com
    ```
 
