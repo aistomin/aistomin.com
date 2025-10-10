@@ -2,22 +2,29 @@
 layout: default
 title: 'Welcome To My New Website'
 date: 2025-10-11 12:00:00 +0200
+excerpt: Hey there! So I finally got around to building myself a proper website at aistomin.com. No more scattered thoughts across random platforms - this is now the official home for whatever's bouncing around in my head.
 ---
 
-Hey there! 👋
+<div class="page-header">
+    <div style="text-align: center; font-size: 3rem; margin-bottom: 0.5rem;">🚀</div>
+    <h1 class="page-title">Welcome To My New Website</h1>
+</div>
 
-So I finally got around to building myself a proper website at [aistomin.com](https://aistomin.com). No more scattered thoughts across random platforms - this is now the official home for whatever's bouncing around in my head.
+<div class="page-content">
+    <p>Hey there! So I finally got around to building myself a proper website at <a href="https://aistomin.com">aistomin.com</a>. No more scattered thoughts across random platforms - this is now the official home for whatever's bouncing around in my head.</p>
 
-## What's the deal here?
+    <h2>What's the deal here?</h2>
 
-I'll be writing about tech stuff (because that's what I do for a living), cool projects I'm working on, random thoughts that might actually be useful to someone, and basically anything that seems worth sharing. Think of it as my personal corner of the internet where I can be more thoughtful than Twitter but less formal than a corporate blog.
+    <p>I'll be writing about tech stuff (because that's what I do for a living), cool projects I'm working on, random thoughts that might actually be useful to someone, and basically anything that seems worth sharing. Think of it as my personal corner of the internet where I can be more thoughtful than Twitter but less formal than a corporate blog.</p>
 
-## The old stuff
+    <h2>The old stuff</h2>
 
-If you're curious about what I used to write, you can still find my older posts at [https://aistomin.github.io/](https://aistomin.github.io/). That's where I rambled about Android development and various tech challenges from 2015-2023. Some of it's actually pretty decent, if I say so myself.
+    <p>If you're curious about what I used to write, you can still find my older posts at <a href="https://aistomin.github.io/">https://aistomin.github.io/</a>. That's where I rambled about Android development and various tech challenges from 2015-2023. Some of it's actually pretty decent, if I say so myself.</p>
 
-## What's next?
+    <h2>What's next?</h2>
 
-Honestly, I'm not entirely sure yet. I'll probably start with some thoughts on the projects I'm currently working on, maybe share some lessons learned from building this site itself, and see where it goes from there.
+    <p>Honestly, I'm not entirely sure yet. I'll probably start with some thoughts on the projects I'm currently working on, maybe share some lessons learned from building this site itself, and see where it goes from there.</p>
 
-Thanks for stopping by! Feel free to reach out if you want to chat about any of this stuff.
+    <p>Thanks for stopping by! Feel free to reach out if you want to chat about any of this stuff.</p>
+
+</div>
