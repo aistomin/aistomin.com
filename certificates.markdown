@@ -21,9 +21,10 @@ title: Certificates
                 <h3>Goethe-Zertifikat C1</h3>
                 <p class="certificate-description">Advanced German language proficiency certificate (CEFR Level C1).</p>
                 <div class="certificate-meta">
-                    <p><strong>Issued:</strong> Munich, September 3, 2025</p>
+                    <p><strong>Issued:</strong> Munich, 03.09.2025</p>
                     <p><strong>Certificate No:</strong> 2048-AC1A-0002450866</p>
                     <p><strong>Institution:</strong> Goethe-Institut</p>
+                    <p><strong>My Date of Birth (for verification):</strong> 17.05.1985</p>
                     <p><strong>Verify:</strong> <a href="https://www.goethe.de/verify" target="_blank" rel="noopener noreferrer">www.goethe.de/verify</a></p>
                 </div>
             </div>
