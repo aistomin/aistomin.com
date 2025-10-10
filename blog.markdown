@@ -4,10 +4,11 @@ title: Blog
 ---
 
 <div class="page-header">
-    <h1 class="page-title">My Blog</h1>
+    <h1 class="page-title">Thoughts ...</h1>
 </div>
 
 <div class="page-content">
+    <img src="/assets/images/drunk.jpg" alt="Andrej far from being sober" class="blog-photo" onerror="this.style.display='none'">
     
     <div class="blog-posts">
         {% for post in site.posts %}
