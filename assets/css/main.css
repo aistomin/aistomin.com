@@ -111,6 +111,56 @@ body {
     line-height: 1.7;
 }
 
+.hero-contact {
+    margin-top: 2rem;
+}
+
+.hero-contact p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #e1e5e9;
+}
+
+.social-links a:hover {
+    background: #2c3e50;
+    border-color: #2c3e50;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+}
+
+.social-links a:hover svg {
+    fill: #fff;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+    fill: #666;
+    transition: fill 0.3s ease;
+}
+
 /* Page styles */
 .page-header {
     text-align: center;
