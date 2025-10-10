@@ -22,7 +22,7 @@ title: About
 
     <p style="margin-top: 2rem; font-style: italic; text-align: center;">— Andrej</p>
 
-    <div class="hero-contact" style="margin-top: 3rem;">
+    <div class="hero-contact" style="margin-top: 3rem; text-align: center;">
         <p>If you want to contact me, check:</p>
         {% include social-links.html %}
     </div>
