@@ -23,7 +23,7 @@ excerpt: Hey there! So I finally got around to building myself a proper website 
 
     <h2>What's next?</h2>
 
-    <p>Honestly, I'm not entirely sure yet. I'll probably start with some thoughts on the projects I'm currently working on, maybe share some lessons learned from building this site itself, and see where it goes from there.</p>
+    <p>Honestly, I'm not entirely sure yet. I'll probably start with some thoughts on the projects and ideas I'm currently working on and see where it goes from there.</p>
 
     <p>Thanks for stopping by! Feel free to reach out if you want to chat about any of this stuff.</p>
 
