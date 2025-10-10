@@ -4,7 +4,7 @@ title: About
 ---
 
 <div class="page-header">
-    <h1 class="page-title">Wandering Between Code, Chords, and Schelling</h1>
+    <h1 class="page-title">Wandering Between Code, Chords and Schelling</h1>
 </div>
 
 <div class="page-content">
