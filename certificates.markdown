@@ -4,25 +4,28 @@ title: Certificates
 ---
 
 <div class="page-header">
-    <h1 class="page-title">Certificates</h1>
+    <h1 class="page-title">Badges & Certificates</h1>
 </div>
 
 <div class="page-content">
-    <p>Here are my professional and language certificates:</p>
+    <img src="/assets/images/me-and-guitar.png" alt="Andrej with guitar" class="about-photo" onerror="this.style.display='none'">
+    
+    <p>Learning never stops. Here's what I've earned along the way:</p>
     
     <div class="certificates-list">
         <div class="certificate-item">
-            <h3>Goethe-Zertifikat C1</h3>
-            <p class="certificate-description">German language proficiency certificate at the C1 level, demonstrating advanced language skills for professional and academic purposes.</p>
-            <p class="certificate-date">Issued: [Year]</p>
-        </div>
-        
-        <div class="certificate-item">
-            <h3>Oracle OCP (Oracle Certified Professional)</h3>
-            <p class="certificate-description">Professional certification demonstrating expertise in Oracle technologies and database administration.</p>
-            <p class="certificate-status">Planned for [Year]</p>
+            <div class="certificate-icon">
+                <img src="/assets/images/goethe-institut.png" alt="Goethe-Institut" width="80" height="80">
+            </div>
+            <div class="certificate-details">
+                <h3>Goethe-Zertifikat C1</h3>
+                <p class="certificate-description">Advanced German language proficiency certificate (CEFR Level C1).</p>
+                <div class="certificate-meta">
+                    <p><strong>Issued:</strong> Munich, September 3, 2025</p>
+                    <p><strong>Certificate No:</strong> 2048-AC1A-0002450866</p>
+                    <p><strong>Institution:</strong> Goethe-Institut</p>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <p><em>More certificates will be added as I complete additional professional development and language learning programs.</em></p>
 </div>

@@ -20,4 +20,11 @@ title: About
 
     <p>I still play guitar and share <a href="https://andy-grails.de">recordings</a> when something feels right. I still read philosophy, though now in the original German. These aren't separate from my work—they're the same impulse. Whether it's a riff, an idea, or a system architecture, I'm trying to understand how the parts connect, what makes something hold together, and what breaks when they don't.</p>
 
+    <p style="margin-top: 2rem; font-style: italic; text-align: center;">— Andrej</p>
+
+    <div class="hero-contact" style="margin-top: 3rem;">
+        <p>If you want to contact me, check:</p>
+        {% include social-links.html %}
+    </div>
+
 </div>
