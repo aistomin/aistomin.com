@@ -8,12 +8,39 @@ This is where I write about things that interest me - mostly technology, innovat
 
 ## Local Development
 
-### Prerequisites
+### Recommended: Docker Setup
+
+#### Prerequisites
+
+- Docker Engine 18.06.0+ (includes Docker Compose)
+
+#### Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone git@github.com:aistomin/aistomin.com.git
+   cd aistomin.com
+   ```
+
+2. Start the development server:
+
+   ```bash
+   docker compose up
+   ```
+
+3. Open your browser and navigate to `http://localhost:4000`
+
+The site will automatically rebuild when you make changes to the source files, and live reload is enabled!
+
+### Alternative: Traditional Ruby Setup
+
+#### Prerequisites
 
 - Ruby 2.7 or newer
 - Bundler gem
 
-### Setup
+#### Setup
 
 1. Clone the repository:
 
