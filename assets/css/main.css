@@ -344,4 +344,19 @@ a:hover {
     .container {
         padding: 0 1rem;
     }
+    
+    .page-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hero-description {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
