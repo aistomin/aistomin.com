@@ -11,7 +11,7 @@ excerpt: Hey there! So I finally got around to building myself a proper website 
 </div>
 
 <div class="page-content">
-    <p>Hey there! So I finally got around to building myself a proper website at <a href="https://aistomin.com">aistomin.com</a>. No more scattered thoughts across random platforms - this is now the official home for whatever's bouncing around in my head.</p>
+    <p>Hey there! So I finally got around to building myself a proper website at <a href="https://aistomin.com" target="_blank" rel="noopener noreferrer">aistomin.com</a>. No more scattered thoughts across random platforms - this is now the official home for whatever's bouncing around in my head.</p>
 
     <h2>What's the deal here?</h2>
 
@@ -19,7 +19,7 @@ excerpt: Hey there! So I finally got around to building myself a proper website 
 
     <h2>The old stuff</h2>
 
-    <p>If you're curious about what I used to write, you can still find my older posts at <a href="https://aistomin.github.io/">https://aistomin.github.io/</a>. That's where I rambled about Android development and various tech challenges from 2015-2023. Some of it's actually pretty decent, if I say so myself.</p>
+    <p>If you're curious about what I used to write, you can still find my older posts at <a href="https://aistomin.github.io/" target="_blank" rel="noopener noreferrer">https://aistomin.github.io/</a>. That's where I rambled about Android development and various tech challenges from 2015-2023. Some of it's actually pretty decent, if I say so myself.</p>
 
     <h2>What's next?</h2>
 

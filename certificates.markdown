@@ -19,7 +19,7 @@ title: Certificates
             </div>
             <div class="certificate-details">
                 <h3>Goethe-Zertifikat C1</h3>
-                <p class="certificate-description">Advanced German language proficiency certificate (CEFR Level C1).</p>
+                <p class="certificate-description">Advanced German language proficiency certificate (<a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages" target="_blank" rel="noopener noreferrer">CEFR</a> Level C1).</p>
                 <div class="certificate-meta">
                     <p><strong>Issued:</strong> Munich, 03.09.2025</p>
                     <p><strong>Certificate No:</strong> 2048-AC1A-0002450866</p>
