@@ -181,6 +181,11 @@ a:hover {
     transition: fill 0.3s ease;
 }
 
+/* Post layout tweaks */
+.post-social {
+    margin-top: 4rem;
+}
+
 /* Page styles */
 .page-header {
     text-align: center;
