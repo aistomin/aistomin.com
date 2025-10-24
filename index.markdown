@@ -5,7 +5,7 @@ title: Home
 
 <div class="hero">
     <h1>Andrej Istomin</h1>
-    <p class="subtitle">Software engineer, hobby musician, wandering philosopher.</p>
+    <p class="subtitle">Software engineer, hobby musician, wandering philosopher</p>
     
     <img src="/assets/images/profile.jpg" alt="Andrej Istomin" class="hero-photo" onerror="this.style.display='none'">
     
