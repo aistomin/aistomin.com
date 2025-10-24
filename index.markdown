@@ -14,7 +14,7 @@ title: Home
     </div>
     
     <div class="hero-contact">
-        <p>If you want to contact me, check:</p>
-        {% include social-links.html %}
+        <p>Follow me:</p>
+        {% include follow-links.html %}
     </div>
 </div>
