@@ -183,7 +183,31 @@ a:hover {
 
 /* Post layout tweaks */
 .post-social {
-    margin-top: 4rem;
+    max-width: 800px;
+    margin: 4rem auto;
+}
+
+/* Comments spacer */
+.comments-spacer {
+    height: 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid #e1e5e9;
+}
+
+/* Comments section */
+.comments-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comments-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e1e5e9;
 }
 
 /* Page styles */
