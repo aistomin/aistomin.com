@@ -1,12 +1,13 @@
 services:
   jekyll:
-    build: .
+    image: jekyll/jekyll:latest
     ports:
       - '4000:4000'
+      - '35729:35729'
     volumes:
       - .:/srv/jekyll
-      - /srv/jekyll/_site
-      - /srv/jekyll/.bundle
+    working_dir: /srv/jekyll
+    command: sh -c "rm -rf _site .jekyll-cache && bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling --watch"
     environment:
       - JEKYLL_ENV=development
-    command: jekyll serve --host 0.0.0.0 --port 4000 --livereload --force_polling
+      - POLLING=true

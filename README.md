@@ -26,12 +26,14 @@ This is where I write about things that interest me - mostly technology, innovat
 2. Start the development server:
 
    ```bash
-   docker compose up
+   ./start.sh
    ```
 
 3. Open your browser and navigate to `http://localhost:4000`
 
 The site will automatically rebuild when you make changes to the source files, and live reload is enabled!
+
+**Note:** The `start.sh` script rebuilds the Docker image from scratch to ensure you always have the latest changes with no caching issues.
 
 ### Alternative: Traditional Ruby Setup
 
