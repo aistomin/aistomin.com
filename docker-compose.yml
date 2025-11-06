@@ -6,8 +6,4 @@ services:
       - '35729:35729'
     volumes:
       - .:/srv/jekyll
-    working_dir: /srv/jekyll
-    command: sh -c "rm -rf _site .jekyll-cache && bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling --watch"
-    environment:
-      - JEKYLL_ENV=development
-      - POLLING=true
+    command: jekyll serve --force_polling
