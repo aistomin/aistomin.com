@@ -1,5 +1,7 @@
 # aistomin.com
 
+[![CI/CD](https://github.com/aistomin/aistomin.com/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/aistomin/aistomin.com/actions/workflows/ci-cd.yml)
+
 Andrej Istomin's personal website, built with Jekyll. Visit at https://aistomin.com
 
 ## About
@@ -120,8 +122,40 @@ npm run test:ui
 npm run test:debug
 ```
 
+## CI/CD Pipeline
+
+This project uses GitHub Actions for continuous integration and deployment.
+
+### How It Works
+
+**On every push/PR to any branch:**
+- Build Jekyll site
+- Run Playwright e2e tests
+- Upload test reports (available in Actions tab)
+
+**On push to `master` branch (only if tests pass):**
+- Deploy to GitHub Pages at https://aistomin.com
+
+**If tests fail:**
+- Deployment is blocked
+- Check the Actions tab for test reports
+
+### Viewing Test Results
+
+1. Go to the [Actions tab](https://github.com/aistomin/aistomin.com/actions)
+2. Click on any workflow run
+3. Download "playwright-report" artifact
+4. Extract and open `index.html` to view detailed test results
+
+### Setting Up GitHub Pages
+
+To enable automated deployment, configure GitHub Pages in repository settings:
+- Go to Settings → Pages
+- Source: **GitHub Actions**
+
 ## Built With
 
 - [Jekyll](https://jekyllrb.com/) - Static site generator
 - [Bundler](https://bundler.io/) - Dependency management
-- [Playwright](https://playwright.dev/) - End-to-end testing framework
+- [Playwright](https://playwright.dev/) - End-to-end testing
+- [GitHub Actions](https://github.com/features/actions) - CI/CD
