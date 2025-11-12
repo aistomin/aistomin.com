@@ -93,6 +93,7 @@ This project includes automated end-to-end tests using [Playwright](https://play
    ```
 
 The script will:
+
 - Install Playwright dependencies if needed (first run only)
 - Check if the website is running at `http://0.0.0.0:4000`
 - Run all E2E tests across multiple browsers (Chromium, Firefox, WebKit)
@@ -129,20 +130,24 @@ This project uses GitHub Actions for continuous integration and deployment.
 ### How It Works
 
 **On every push/PR to any branch:**
+
 - Build Jekyll site
 - Run Playwright e2e tests
 - Upload test reports (available in Actions tab)
 
 **On push to `master` branch (only if tests pass):**
+
 - Deploy to GitHub Pages at https://aistomin.com
 
 **If tests fail:**
+
 - Deployment is blocked
 - Check the Actions tab for test reports
 
 ### Production Monitoring
 
 A separate workflow runs e2e tests against the live production site (https://aistomin.com):
+
 - Runs **every hour** automatically
 - Can be triggered manually from Actions tab
 - Verifies the site is working correctly in production
@@ -150,18 +155,84 @@ A separate workflow runs e2e tests against the live production site (https://ais
 
 This helps catch any issues that might only appear in production.
 
-### Viewing Test Results
+## How to Contribute
 
-1. Go to the [Actions tab](https://github.com/aistomin/aistomin.com/actions)
-2. Click on any workflow run
-3. Download the test report artifact
-4. Extract and open `index.html` to view detailed test results
+We welcome contributions! Please follow these steps:
 
-### Setting Up GitHub Pages
+### 1. Fork and Clone
 
-To enable automated deployment, configure GitHub Pages in repository settings:
-- Go to Settings → Pages
-- Source: **GitHub Actions**
+```bash
+git clone git@github.com:YOUR_USERNAME/aistomin.com.git
+cd aistomin.com
+```
+
+### 2. Create a Branch
+
+```bash
+git checkout -b your-feature-branch
+```
+
+### 3. Make Your Changes
+
+Edit the files as needed. The site uses Jekyll, so:
+
+- Content pages are in the root (`.markdown` files)
+- Layouts are in `_layouts/`
+- Styles are in `_sass/` and `assets/css/`
+- Blog posts go in `_posts/`
+
+### 4. Test Your Changes Locally
+
+Start the development server to preview your changes:
+
+```bash
+./start.sh
+```
+
+Then visit `http://localhost:4000` in your browser.
+
+### 5. Run Tests Before Committing
+
+**Important:** Always run tests before committing:
+
+```bash
+./test-before-commit.sh
+```
+
+This script will:
+
+- Stop any running containers
+- Start a fresh instance
+- Run all e2e tests
+- Show results
+- Clean up and stop containers
+
+Only commit if all tests pass.
+
+### 6. Commit and Push
+
+```bash
+git add .
+git commit -m "Your descriptive commit message"
+git push origin your-feature-branch
+```
+
+### 7. Create a Pull Request
+
+Go to GitHub and create a pull request from your branch. The CI/CD pipeline will automatically:
+
+- Build the site
+- Run e2e tests
+- Report results
+
+Your PR can only be merged if all tests pass.
+
+### Additional Scripts
+
+- `./start.sh` - Start the development server
+- `./stop.sh` - Stop the development server
+- `./run-e2e-tests.sh` - Run tests against a running server
+- `./test-before-commit.sh` - Full test cycle (recommended before committing)
 
 ## Built With
 
