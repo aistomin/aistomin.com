@@ -140,11 +140,21 @@ This project uses GitHub Actions for continuous integration and deployment.
 - Deployment is blocked
 - Check the Actions tab for test reports
 
+### Production Monitoring
+
+A separate workflow runs e2e tests against the live production site (https://aistomin.com):
+- Runs **every hour** automatically
+- Can be triggered manually from Actions tab
+- Verifies the site is working correctly in production
+- Uploads test reports (retained for 7 days)
+
+This helps catch any issues that might only appear in production.
+
 ### Viewing Test Results
 
 1. Go to the [Actions tab](https://github.com/aistomin/aistomin.com/actions)
 2. Click on any workflow run
-3. Download "playwright-report" artifact
+3. Download the test report artifact
 4. Extract and open `index.html` to view detailed test results
 
 ### Setting Up GitHub Pages

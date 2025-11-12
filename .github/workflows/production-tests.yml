@@ -1,0 +1,40 @@
+name: Production Tests
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  test:
+    name: Test Production Site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Playwright
+        working-directory: ./playwright
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Run E2E tests against production
+        working-directory: ./playwright
+        env:
+          BASE_URL: https://aistomin.com
+        run: npx playwright test --config=playwright.config.js
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-test-report
+          path: playwright/playwright-report/
+          retention-days: 7
+
