@@ -148,7 +148,7 @@ This project uses GitHub Actions for continuous integration and deployment.
 
 A separate workflow runs e2e tests against the live production site (https://aistomin.com):
 
-- Runs **every hour** automatically
+- Runs **every 5 minutes** automatically
 - Can be triggered manually from Actions tab
 - Verifies the site is working correctly in production
 - Uploads test reports (retained for 7 days)
