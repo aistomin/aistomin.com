@@ -1,9 +1,9 @@
-name: Production Tests
+name: Run E2E Tests Against Production
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Every hour
-  workflow_dispatch:  # Allow manual trigger
+    - cron: '0 * * * *' # Every hour
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   test:
@@ -37,4 +37,3 @@ jobs:
           name: production-test-report
           path: playwright/playwright-report/
           retention-days: 7
-
