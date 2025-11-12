@@ -2,7 +2,7 @@ name: Run E2E Tests Against Production
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Every 5 minutes
+    - cron: '0 * * * *' # Every hour
   workflow_dispatch: # Allow manual trigger
 
 jobs:
