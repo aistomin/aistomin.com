@@ -55,7 +55,7 @@ comments: true
         }
     </style>
 
-    <p>A couple of months have already passed since I got my <a href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html">Goethe-Zertifikat C1</a>. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.</p>
+    <p>A couple of months have already passed since I got my <a href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1</a>. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.</p>
 
     <h2>Preamble</h2>
 
@@ -63,7 +63,7 @@ comments: true
 
     <h2>Facts</h2>
 
-    <p>I took the Goethe-Zertifikat C1 exam on 27 August 2025 at the Goethe-Institut Munich. It was <a href="https://swiss-exams.ch/news-blog/the-modular-goethe-zertifikat-c1-arrives-in-2024-en">the new modular format of the exam</a>, introduced in 2024. The exam cost me €335.00.</p>
+    <p>I took the Goethe-Zertifikat C1 exam on 27 August 2025 at the Goethe-Institut Munich. It was <a href="https://swiss-exams.ch/news-blog/the-modular-goethe-zertifikat-c1-arrives-in-2024-en" target="_blank" rel="noopener noreferrer">the new modular format of the exam</a>, introduced in 2024. The exam cost me €335.00.</p>
 
     <p>On 3 September I received an email with the results of my exam (spoiler: I passed!). So, they kept their promise — it took about a week to receive the results. Important to mention: they no longer send a paper certificate; instead they email a link to the certificate, which you can share later.</p>
 
@@ -174,7 +174,7 @@ comments: true
 
     <p>The assistants start to select small groups of students and escort them to a classroom where they prepare for the speaking part. Again, desks are preassigned; writing utensils, paper and the speaking task sheet are already provided. The assistants monitor the room. Preparation time is 20 minutes.</p>
 
-    <p>After 20 minutes, one of the examiners arrives. They take two students - paired in advance, as you might expect - and lead them to the exam room. The exam room looked nothing like <a href="https://www.youtube.com/watch?v=HoD9dnTidxw">the Goethe-Institut YouTube video</a>. In my case, unlike the video, the atmosphere was quite formal: the examiners had their own table and each student had a table; the three tables formed a triangle, with each side a couple of metres apart. Students do not choose their table; it is preassigned.</p>
+    <p>After 20 minutes, one of the examiners arrives. They take two students - paired in advance, as you might expect - and lead them to the exam room. The exam room looked nothing like <a href="https://www.youtube.com/watch?v=HoD9dnTidxw" target="_blank" rel="noopener noreferrer">the Goethe-Institut YouTube video</a>. In my case, unlike the video, the atmosphere was quite formal: the examiners had their own table and each student had a table; the three tables formed a triangle, with each side a couple of metres apart. Students do not choose their table; it is preassigned.</p>
 
     <p>In the prearranged order, students give presentations (~7 minutes each). After each presentation the partner and the examiners ask questions, and then both students discuss the shared topic (~5 minutes). The examiners are quite formal — don’t get me wrong, I don’t mean they are unfriendly — but don’t expect family-friendly small talk; this is a real exam! The exam takes about 20 minutes.</p>
 
@@ -189,8 +189,8 @@ comments: true
     <h2>Next Posts</h2>
 
     <ul>
-        <li><a href="https://link.to.be.added">Goethe-Zertifikat C1 — My Experience, Part II: The Preparations</a></li>
-        <li><a href="https://link.to.be.added">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
+        <li><a href="https://link.to.be.added" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1 — My Experience, Part II: The Preparations</a></li>
+        <li><a href="https://link.to.be.added" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
     </ul>
 
 </div>
