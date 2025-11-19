@@ -178,7 +178,7 @@ comments: true
 
     <p>In the prearranged order, students give presentations (~7 minutes each). After each presentation the partner and the examiners ask questions, and then both students discuss the shared topic (~5 minutes). The examiners are quite formal — don’t get me wrong, I don’t mean they are unfriendly — but don’t expect family-friendly small talk; this is a real exam! The exam takes about 20 minutes.</p>
 
-    <h2>Overall experience</h2>
+    <h2>Overall Experience</h2>
 
     <p>Taking into consideration that the event is organised for adults with above-average intelligence, mostly experienced in similar exams and not requiring strict supervision, I would rate it 8/10. I once worked as an assistant on a nationwide test for school students, so I know how difficult it is to organise such an exam flawlessly. My experience as a student, doctoral student and participant in many tests and exams also gives me a basis for comparison. They could probably do better, but the level they demonstrated is solid and meets expectations of the Goethe-Institut.</p>
 
