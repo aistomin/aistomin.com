@@ -7,6 +7,46 @@ keywords: Goethe-Zertifikat C1, Goethe C1 exam, German language exam, C1 exam ex
 comments: true
 ---
 
+<style>
+    .results-table {
+        margin: 1rem 0;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .results-table th,
+    .results-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .results-table th:first-child,
+    .results-table td:first-child {
+        text-align: left;
+    }
+    .results-table th:not(:first-child),
+    .results-table td:not(:first-child) {
+        text-align: center;
+    }
+
+    .ratings-table {
+        margin: 1rem 0;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .ratings-table th,
+    .ratings-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .ratings-table th:first-child,
+    .ratings-table td:first-child {
+        text-align: left;
+    }
+    .ratings-table th:last-child,
+    .ratings-table td:last-child {
+        text-align: center;
+    }
+</style>
+
 <div class="page-header">
     <div style="text-align: center; margin-bottom: 0.5rem;">
         <img src="/assets/images/goethe-institut.png" alt="Goethe Institut" style="height: 3rem; width: auto;">
@@ -15,46 +55,6 @@ comments: true
 </div>
 
 <div class="page-content">
-    <style>
-        .results-table {
-            margin: 1rem 0;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        .results-table th,
-        .results-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        .results-table th:first-child,
-        .results-table td:first-child {
-            text-align: left;
-        }
-        .results-table th:not(:first-child),
-        .results-table td:not(:first-child) {
-            text-align: center;
-        }
-
-        .ratings-table {
-            margin: 1rem 0;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        .ratings-table th,
-        .ratings-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        .ratings-table th:first-child,
-        .ratings-table td:first-child {
-            text-align: left;
-        }
-        .ratings-table th:last-child,
-        .ratings-table td:last-child {
-            text-align: center;
-        }
-    </style>
-
     <p>A couple of months have already passed since I got my <a href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1</a>. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.</p>
 
     <h2>Preamble</h2>
