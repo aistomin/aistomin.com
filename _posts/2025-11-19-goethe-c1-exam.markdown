@@ -15,6 +15,46 @@ comments: true
 </div>
 
 <div class="page-content">
+    <style>
+        .results-table {
+            margin: 1rem 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .results-table th,
+        .results-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .results-table th:first-child,
+        .results-table td:first-child {
+            text-align: left;
+        }
+        .results-table th:not(:first-child),
+        .results-table td:not(:first-child) {
+            text-align: center;
+        }
+
+        .ratings-table {
+            margin: 1rem 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .ratings-table th,
+        .ratings-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .ratings-table th:first-child,
+        .ratings-table td:first-child {
+            text-align: left;
+        }
+        .ratings-table th:last-child,
+        .ratings-table td:last-child {
+            text-align: center;
+        }
+    </style>
+
     <p>A couple of months have already passed since I got my <a href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html">Goethe-Zertifikat C1</a>. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.</p>
 
     <h2>Preamble</h2>
@@ -29,67 +69,67 @@ comments: true
 
     <p>As I mentioned, I passed the exam — here are my results:</p>
 
-    <table style="margin: 1rem 0; border-collapse: collapse; width: 100%;">
+    <table class="results-table">
         <thead>
             <tr>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Exam Part</th>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Attained Score</th>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Max. Score</th>
+                <th>Exam Part</th>
+                <th>Attained Score</th>
+                <th>Max. Score</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Lesen (Reading)</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">67</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">100</td>
+                <td>Lesen (Reading)</td>
+                <td>67</td>
+                <td>100</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Hören (Listening)</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">77</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">100</td>
+                <td>Hören (Listening)</td>
+                <td>77</td>
+                <td>100</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Schreiben (Writing)</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">96</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">100</td>
+                <td>Schreiben (Writing)</td>
+                <td>96</td>
+                <td>100</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Sprechen (Speaking)</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">85</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">100</td>
+                <td>Sprechen (Speaking)</td>
+                <td>85</td>
+                <td>100</td>
             </tr>
         </tbody>
     </table>
 
     <p>Here is how the points are rated:</p>
 
-    <table style="margin: 1rem 0; border-collapse: collapse; width: 100%;">
+    <table class="ratings-table">
         <thead>
             <tr>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Points</th>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Rating</th>
+                <th>Points</th>
+                <th>Rating</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">100 – 90</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Very good</td>
+                <td>100 – 90</td>
+                <td>Very good</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">89 – 80</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Good</td>
+                <td>89 – 80</td>
+                <td>Good</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">79 – 70</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Satisfactory</td>
+                <td>79 – 70</td>
+                <td>Satisfactory</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">69 – 60</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Pass</td>
+                <td>69 – 60</td>
+                <td>Pass</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">59 – 0</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Fail</td>
+                <td>59 – 0</td>
+                <td>Fail</td>
             </tr>
         </tbody>
     </table>
