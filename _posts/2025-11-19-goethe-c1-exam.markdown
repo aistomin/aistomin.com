@@ -19,7 +19,7 @@ comments: true
 
     <h2>Preamble</h2>
 
-    <p>As often happens to me, I didn't find it possible to put all the information I'd like to share into a single blog post. That's why I decided to break the material into three parts; this post will only contain a factual description of the exam itself. I'll try as hard as I can to avoid subjective conclusions or rants, except where I need to share what I felt during the exam. No worries: there will be plenty of rants, speculations and opinion-based conclusions in the next posts. You'll find links to the next posts at the end of this one.</p>
+    <p>As often happens to me, I didn't find it possible to put all the information I'd like to share into a single blog post. That's why I decided to break the material into three parts. This post will only contain a factual description of the exam itself. I'll try as hard as I can to avoid subjective conclusions or rants, except where I need to share what I felt during the exam. No worries: there will be plenty of rants, speculations and opinion-based conclusions in the next posts. You'll find links to the next posts at the end of this one.</p>
 
     <h2>Facts</h2>
 
@@ -98,7 +98,7 @@ comments: true
 
     <h2>Reception and Security</h2>
 
-    <p>After arriving, all students are invited to the — let's call it — reception room. Students queue at a desk where two assistants (one male and one female) check documents, complete the paperwork and give instructions. It’s important to note that the identification must be a valid government ID — no copies, and driver’s licences are not accepted. After document checks, each student receives an exam paper with their details and a key to a personal locker. Students must put all personal belongings in that locker. Only the government ID, the exam paper and, optionally, a drink are allowed in the exam room. Important: no mobile devices, watches, writing utensils or paper — everything you need will be provided by the institute.</p>
+    <p>After arriving, all students are invited to the — let's call it — reception room. Students queue at a desk where two assistants (one male and one female) check documents, complete the paperwork and give instructions. It’s important to note that the identification must be a valid government ID — no copies, and driver’s licences are not accepted. After document checks, each student receives an exam registration sheet and a key to a personal locker. Students must put all personal belongings in that locker. Only the government ID, the exam registration sheet and, optionally, a drink are allowed in the exam room. Important: no mobile devices, watches, writing utensils or paper — everything you need will be provided by the institute.</p>
 
     <p>When registration is over, students are divided into two groups: those taking the exam on a computer, and those taking it on paper. After that, each group is escorted to its classroom where the first three parts — Reading, Listening and Writing — take place.</p>
 
@@ -124,13 +124,13 @@ comments: true
 
     <h2>Long Break</h2>
 
-    <p>In my case, there was a very long — more than three-hour — break between the first three parts and the speaking part. You can take your belongings from the locker, leave the building and spend time outside. Important: be back on time — the appointment for the speaking test is written on the exam paper, which stays with the student until the very end.</p>
+    <p>In my case, there was a very long — more than three-hour — break between the first three parts and the speaking part. You can take your belongings from the locker, leave the building and spend time outside. Important: be back on time — the appointment for the speaking test is written on the exam registration sheet, which stays with the student until the very end.</p>
 
     <p>Although it’s advisable to have lunch, be careful — don’t make my mistake: if you eat too much you may become sleepy and unenthusiastic, which can affect your performance in the final part of this vaudeville.</p>
 
     <h2>Speaking</h2>
 
-    <p>At the appointed time, all students gather again in the reception room. They must again put personal belongings in the locker and keep only the government ID, exam paper and perhaps a drink with them.</p>
+    <p>At the appointed time, all students gather again in the reception room. They must again put personal belongings in the locker and keep only the government ID, exam registration sheet and perhaps a drink with them.</p>
 
     <p>The assistants start to select small groups of students and escort them to a classroom where they prepare for the speaking part. Again, desks are preassigned; writing utensils, paper and the speaking task sheet are already provided. The assistants monitor the room. Preparation time is 20 minutes.</p>
 
@@ -141,6 +141,10 @@ comments: true
     <h2>Overall experience</h2>
 
     <p>Taking into consideration that the event is organised for adults with above-average intelligence, mostly experienced in similar exams and not requiring strict supervision, I would rate it 8/10. I once worked as an assistant on a nationwide test for school students, so I know how difficult it is to organise such an exam flawlessly. My experience as a student, doctoral student and participant in many tests and exams also gives me a basis for comparison. They could probably do better, but the level they demonstrated is solid and meets expectations of the Goethe-Institut.</p>
+
+    <p>This text turned out quite long, and it may still contain small inconsistencies or unclear parts. If something seems confusing or if you have any questions, feel free to leave a comment — I’ll be happy to clarify.</p>
+
+    <p>Thanks for reading, and see you in the next part!</p>
 
     <h2>Next Posts</h2>
 
