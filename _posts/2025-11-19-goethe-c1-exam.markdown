@@ -29,7 +29,7 @@ comments: true
 
     <p>As I mentioned, I passed the exam — here are my results:</p>
 
-    <table style="margin: 1rem 0; border-collapse: collapse;">
+    <table style="margin: 1rem 0; border-collapse: collapse; width: 100%;">
         <thead>
             <tr>
                 <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Exam Part</th>
@@ -63,33 +63,33 @@ comments: true
 
     <p>Here is how the points are rated:</p>
 
-    <table style="margin: 1rem 0; border-collapse: collapse;">
+    <table style="margin: 1rem 0; border-collapse: collapse; width: 100%;">
         <thead>
             <tr>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Points</th>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Rating</th>
+                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Points</th>
+                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Rating</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">100 – 90</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">VERY GOOD</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">100 – 90</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Very good</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">89 – 80</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">GOOD</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">89 – 80</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Good</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">79 – 70</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">SATISFACTORY</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">79 – 70</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Satisfactory</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">69 – 60</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">PASS</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">69 – 60</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Pass</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">59 – 0</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">FAIL</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">59 – 0</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Fail</td>
             </tr>
         </tbody>
     </table>
