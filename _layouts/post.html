@@ -2,6 +2,35 @@
 layout: default
 ---
 
+<style>
+  .post-header-wrapper {
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e1e5e9;
+    margin-bottom: 1rem;
+  }
+
+  .post-date-in-header {
+    color: #999;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const pageHeader = document.querySelector('.page-header');
+    if (pageHeader) {
+      const dateDiv = document.createElement('div');
+      dateDiv.className = 'post-date-in-header';
+      dateDiv.innerHTML =
+        '<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>';
+      pageHeader.appendChild(dateDiv);
+    }
+  });
+</script>
+
 {{ content }}
 
 <div class="container">
