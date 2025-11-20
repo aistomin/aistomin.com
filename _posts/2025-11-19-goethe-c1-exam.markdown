@@ -189,8 +189,8 @@ comments: true
     <h2>Next Posts</h2>
 
     <ul>
-        <li><a href="https://link.to.be.added" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1 — My Experience, Part II: The Preparations</a></li>
-        <li><a href="https://link.to.be.added" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
+        <li><a href="/coming-soon/">Goethe-Zertifikat C1 — My Experience, Part II: The Preparations</a></li>
+        <li><a href="/coming-soon/">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
     </ul>
 
 </div>
