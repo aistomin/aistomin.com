@@ -96,7 +96,7 @@ The script will:
 
 - Install Playwright dependencies if needed (first run only)
 - Check if the website is running at `http://0.0.0.0:4000`
-- Run all E2E tests across multiple browsers (Chromium, Firefox, WebKit)
+- Run all E2E tests on Chromium
 - Generate an HTML report
 
 ### Viewing Test Results
