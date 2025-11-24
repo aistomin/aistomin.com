@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 'Goethe-Zertifikat C1 — My Experience, Part I: The Exam'
+title: 'Goethe-Zertifikat C1 — My Experience, Part II: The Preparations'
 date: 2025-11-24 12:00:00 +0200 # TODO: Issue #76. Do not forget to change the date.
 excerpt: A couple of months have already passed since I got my Goethe-Zertifikat C1. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.
 keywords: Goethe-Zertifikat C1, Goethe C1 exam, German language exam, C1 exam experience, Goethe-Institut Munich, German certification, language learning, C1 speaking test, C1 writing test, modular Goethe exam
-image: /assets/images/goethe-institut-muenchen.jpg
+image: /assets/images/goethe-c1-preparations.jpeg
 comments: true
+published: false
 ---
 
 <style>
@@ -52,7 +53,7 @@ comments: true
     <div style="text-align: center; margin-bottom: 0.5rem;">
         <img src="/assets/images/goethe-institut.png" alt="Goethe Institut" style="height: 3rem; width: auto;">
     </div>
-    <h1 class="page-title">Goethe-Zertifikat C1 — My Experience, Part I: The Exam</h1>
+    <h1 class="page-title">Goethe-Zertifikat C1 — My Experience, Part II: The Preparations</h1>
 </div>
 
 <div class="page-content">
@@ -191,10 +192,9 @@ comments: true
 
     <p>Thanks for reading, and see you in the next part!</p>
 
-    <h2>Next Posts</h2>
+    <h2>Next Post</h2>
 
     <ul>
-        <li><a href="/coming-soon/">Goethe-Zertifikat C1 — My Experience, Part II: The Preparations</a></li>
         <li><a href="/coming-soon/">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
     </ul>
 
