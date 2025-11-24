@@ -121,5 +121,45 @@ test.describe('Home Page', () => {
     const homeMenuItem = page.locator('.nav-menu li a:has-text("Home")');
     await expect(homeMenuItem).toHaveClass(/active/);
   });
+
+  test('should display logo with correct text on landing', async ({ page }) => {
+    // Navigate to home page
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    
+    // Check that logo is visible
+    const logo = page.locator('.site-title');
+    await expect(logo).toBeVisible();
+    
+    // Check that logo displays correct text
+    await expect(logo).toHaveText('Andrej Istomin');
+    
+    // Check that logo links to home
+    await expect(logo).toHaveAttribute('href', '/');
+  });
+
+  test('should navigate from About page to Home page via logo click', async ({ page }) => {
+    // Start on home page
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    
+    // Navigate to About page
+    await page.click('.nav-menu li a:has-text("About")');
+    
+    // Verify we're on About page
+    await expect(page).toHaveURL(/\/about/);
+    
+    // Verify About page text is visible (text from the middle)
+    const aboutContent = page.locator('.page-content');
+    await expect(aboutContent).toContainText('My early career was in Bishkek, building ERP systems in C# and CashIn systems');
+    
+    // Click on logo
+    const logo = page.locator('.site-title');
+    await logo.click();
+    
+    // Verify we're back on home page
+    await expect(page).toHaveURL(/\/$/);
+    
+    // Verify Home page text is visible
+    await expect(page.locator('.hero-description')).toContainText('systems that last, code that makes sense');
+  });
 });
 
