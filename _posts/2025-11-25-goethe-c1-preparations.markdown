@@ -328,7 +328,7 @@ comments: true
         Overall, I'm satisfied with the experience. There was a lot to learn — not only about the exam,
         but about my general ability to perform intellectual work. Lack of planning, lack of
         concentration — all these things matter. I hope to improve them and apply them next time. But
-        we'll talk about "next time" next time :) In the next post.
+        we'll talk about "next time" next time 😊 In the next post.
     </p>
 
     <p>Thanks for reading, and see you soon!</p>
