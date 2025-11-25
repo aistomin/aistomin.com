@@ -26,7 +26,7 @@ comments: true
     </p>
 
     <p style="text-align: center; margin: 2rem 0;">
-        <img src="/assets/images/goethe-c1-preparations.jpg" alt="Preparations mess on the table" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <img src="/assets/images/goethe-c1-preparations-large.jpg" alt="Preparations mess on the table" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     </p>
 
     <h2>How It Started: B1</h2>

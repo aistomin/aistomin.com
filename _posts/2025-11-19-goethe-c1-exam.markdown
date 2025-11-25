@@ -59,7 +59,7 @@ comments: true
     <p>A couple of months have already passed since I got my <a href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1</a>. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.</p>
 
     <p style="text-align: center; margin: 2rem 0;">
-        <img src="/assets/images/goethe-institut-muenchen.jpg" alt="Goethe-Institut München" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <img src="/assets/images/goethe-institut-muenchen-large.jpg" alt="Goethe-Institut München" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     </p>
 
     <h2>Preamble</h2>

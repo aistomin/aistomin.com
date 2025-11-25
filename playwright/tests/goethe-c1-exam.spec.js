@@ -33,10 +33,10 @@ test.describe('Goethe C1 Exam Blog Post', () => {
   test('should display the main image', async ({ page }) => {
     await page.goto('/2025/11/19/goethe-c1-exam', { waitUntil: 'domcontentloaded' });
     
-    // Check for the Goethe Institut München image
+    // Check for the Goethe Institut München image (large version displayed in post)
     const mainImage = page.locator('img[alt="Goethe-Institut München"]');
     await expect(mainImage).toBeVisible();
-    await expect(mainImage).toHaveAttribute('src', '/assets/images/goethe-institut-muenchen.jpg');
+    await expect(mainImage).toHaveAttribute('src', '/assets/images/goethe-institut-muenchen-large.jpg');
   });
 
   test('should display all section headings and content snippets', async ({ page }) => {

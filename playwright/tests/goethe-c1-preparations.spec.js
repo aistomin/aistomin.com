@@ -33,10 +33,10 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
   test('should display the main image', async ({ page }) => {
     await page.goto('/2025/11/25/goethe-c1-preparations', { waitUntil: 'domcontentloaded' });
     
-    // Check for the preparations image
+    // Check for the preparations image (large version displayed in post)
     const mainImage = page.locator('img[alt="Preparations mess on the table"]');
     await expect(mainImage).toBeVisible();
-    await expect(mainImage).toHaveAttribute('src', '/assets/images/goethe-c1-preparations.jpg');
+    await expect(mainImage).toHaveAttribute('src', '/assets/images/goethe-c1-preparations-large.jpg');
   });
 
   test('should display all section headings and content snippets', async ({ page }) => {
