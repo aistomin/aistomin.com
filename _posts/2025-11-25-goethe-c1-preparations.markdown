@@ -8,46 +8,6 @@ image: /assets/images/goethe-c1-preparations.jpg
 comments: true
 ---
 
-<style>
-    .results-table {
-        margin: 1rem 0;
-        border-collapse: collapse;
-        width: 100%;
-    }
-    .results-table th,
-    .results-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
-    }
-    .results-table th:first-child,
-    .results-table td:first-child {
-        text-align: left;
-    }
-    .results-table th:not(:first-child),
-    .results-table td:not(:first-child) {
-        text-align: center;
-    }
-
-    .ratings-table {
-        margin: 1rem 0;
-        border-collapse: collapse;
-        width: 100%;
-    }
-    .ratings-table th,
-    .ratings-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
-    }
-    .ratings-table th:first-child,
-    .ratings-table td:first-child {
-        text-align: left;
-    }
-    .ratings-table th:last-child,
-    .ratings-table td:last-child {
-        text-align: center;
-    }
-</style>
-
 <div class="page-header">
     <div style="text-align: center; margin-bottom: 0.5rem;">
         <img src="/assets/images/goethe-institut.png" alt="Goethe Institut" style="height: 3rem; width: auto;">
