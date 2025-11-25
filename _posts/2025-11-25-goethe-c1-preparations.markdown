@@ -150,8 +150,8 @@ comments: true
 
     <p>
         As an academically trained engineer, I naturally looked for an academic solution. What would
-        be an achievable goal to formally confirm my progress? In 2023 I decided to take the 
-        Goethe-Zertifikat C1 and get the certificate.
+        be an achievable goal to formally confirm my progress? In 2023 I made the decision to work 
+        toward the Goethe-Zertifikat C1.
     </p>
 
     <p>
@@ -195,10 +195,11 @@ comments: true
     </p>
 
     <p>
-        Then came something even more helpful. We had issues with technical support, and it was decided
-        I could help answer emails. A quick support email in imperfect German was considered better than
-        a perfectly formulated but very late one. This became a great writing exercise. Unfortunately, AI
-        later took my job — meaning I got lazy and let AI answer emails instead of writing them myself.
+        Parallel to that, another important factor helped me improve. We had issues with technical support,
+        and it was decided I could help answer emails. A quick support email in imperfect German was
+        considered better than a perfectly formulated but very late one. This became a great writing exercise.
+        Unfortunately, AI later took my job — meaning I got lazy and let AI answer emails instead of writing 
+        them myself.
     </p>
 
     <p>
@@ -258,8 +259,8 @@ comments: true
         I realised I needed help. Luckily Lingster Academy had an intensive course called 
         "C1 Prüfungsvorbereitung". It included various model tests for both Telc and Goethe, 
         a wide range of writing topics for students to submit, and even the option to simulate 
-        the speaking part (which I unfortunately never used due to lack of time). They also offer
-        Zoom calls twice a week for speaking practice.
+        the speaking part (which I unfortunately never used due to lack of time). They also 
+        organise group speaking sessions on Zoom twice a week.
     </p>
 
     <p>
@@ -272,11 +273,12 @@ comments: true
         Problem number one: focusing for more than 20–30 minutes was extremely hard. I don't know
         how I functioned before or how I managed my job, but after taking a timed reading or 
         listening test I felt exhausted for the rest of the day. Doing both every day was impossible;
-        even doing one daily was difficult. I completed maybe two per week. The good news: I scored 
-        around 80/100, so I decided to shift my focus to writing and speaking. In the end, I got 67 
-        and 77 points for reading and listening. Is that good or bad? Considering I hardly practised 
-        them and the exam environment is always different from your quiet home office — I'd say 
-        satisfactory. The lesson: occasionally practise under time pressure and in a noisy environment.
+        even doing one daily was difficult. I completed maybe two per week. The good news: in the model
+        tests at home I scored around 80/100, so I shifted my focus to writing and speaking. 
+        In the real exam I later got 67 and 77 points, for reading and listening respectively. 
+        Is that good or bad? Considering I hardly practised them and the exam environment is always
+        different from your quiet home office — I'd say satisfactory. The lesson: occasionally practise
+        under time pressure and in a noisy environment.
     </p>
 
     <p>
@@ -297,6 +299,10 @@ comments: true
         a proper speaking simulation because I was too stressed about writing. I simply hoped speaking 
         would magically work out. In the exam I got 85/100 — not a bad result considering I was exhausted
         and stupidly had a heavy meal before this part, which made me sleepy.
+    </p>
+
+    <p>
+        All the specifics of the exam day itself are in <a href="todo:add-link">Part I</a> of this series.
     </p>
 
     <h2>Conclusion</h2>
