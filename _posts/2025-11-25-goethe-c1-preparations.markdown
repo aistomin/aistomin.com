@@ -65,9 +65,9 @@ comments: true
     <p>
         In the second part of my "Goethe-Zertifikat C1" trilogy I'd like to share my approach
         to preparing for this exam and reflect a little on what I think I did right and what I
-        definitely did wrong. I'm not a linguistic expert, so don't expect any professional 
+        definitely did wrong. I'm not a linguistic expert, so don't expect any professional
         advice here — the internet is full of people who provide that. I just dare to hope that
-        you'll find something interesting and maybe even helpful in this long post. 
+        you'll find something interesting and maybe even helpful in this long post.
         Grab your coffee and let's get started!
     </p>
 
@@ -115,8 +115,9 @@ comments: true
 
     <p>
         Summarising this B1 chapter of my life: "learning by doing" worked perfectly and eventually
-        allowed me to pass the Goethe-Zertifikat B1 in 2018. Three years of effortless, half-passive
-        learning — and I went from 0 to B1. Not bad.
+        allowed me to pass the
+        <a href="https://www.goethe.de/ins/de/en/prf/prf/gzb1.html" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat B1</a> in 2018.
+        Three years of effortless, half-passive learning — and I went from 0 to B1. Not bad.
     </p>
 
     <h2>C1. Decision</h2>
@@ -150,7 +151,8 @@ comments: true
     <p>
         As an academically trained engineer, I naturally looked for an academic solution. What would
         be an achievable goal to formally confirm my progress? In 2023 I made the decision to work
-        toward the Goethe-Zertifikat C1.
+        toward the
+        <a href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1</a>.
     </p>
 
     <p>

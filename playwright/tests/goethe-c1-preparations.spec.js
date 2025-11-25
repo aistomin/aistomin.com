@@ -104,10 +104,22 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     await expect(zdfLink).toBeVisible();
     await expect(zdfLink).toHaveAttribute('target', '_blank');
     
+    // Check Goethe-Zertifikat B1 link
+    const goetheB1Link = page.locator('a[href="https://www.goethe.de/ins/de/en/prf/prf/gzb1.html"]');
+    await expect(goetheB1Link).toBeVisible();
+    await expect(goetheB1Link).toHaveAttribute('target', '_blank');
+    await expect(goetheB1Link).toHaveAttribute('rel', 'noopener noreferrer');
+    
     // Check Kant Wikipedia link
     const kantLink = page.locator('a[href="https://en.wikipedia.org/wiki/Immanuel_Kant"]');
     await expect(kantLink).toBeVisible();
     await expect(kantLink).toHaveAttribute('target', '_blank');
+    
+    // Check Goethe-Zertifikat C1 link
+    const goetheC1Link = page.locator('a[href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html"]');
+    await expect(goetheC1Link).toBeVisible();
+    await expect(goetheC1Link).toHaveAttribute('target', '_blank');
+    await expect(goetheC1Link).toHaveAttribute('rel', 'noopener noreferrer');
     
     // Check CEFR Wikipedia link
     const cefrLink = page.locator('a[href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages"]');
