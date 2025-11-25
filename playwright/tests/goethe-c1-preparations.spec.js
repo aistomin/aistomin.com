@@ -36,7 +36,7 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     // Check for the preparations image
     const mainImage = page.locator('img[alt="Preparations mess on the table"]');
     await expect(mainImage).toBeVisible();
-    await expect(mainImage).toHaveAttribute('src', '/assets/images/goethe-c1-preparations.jpeg');
+    await expect(mainImage).toHaveAttribute('src', '/assets/images/goethe-c1-preparations.jpg');
   });
 
   test('should display all section headings and content snippets', async ({ page }) => {

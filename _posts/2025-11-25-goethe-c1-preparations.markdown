@@ -4,7 +4,7 @@ title: 'Goethe-Zertifikat C1 — My Experience, Part II: Preparations'
 date: 2025-11-25 22:00:00 +0100
 excerpt: In the second part of my Goethe-Zertifikat C1 trilogy I'd like to share my approach to preparing for this exam and reflect a little on what I think I did right and what I definitely did wrong. I'm not a linguistic expert, so don't expect any professional advice here — the internet is full of people who provide that. I just dare to hope that you'll find something interesting and maybe even helpful in this long post. Grab your coffee and let's get started!
 keywords: Goethe-Zertifikat C1, C1 exam preparation, German language learning, language learning journey, Lingster Academy, German grammar courses, CEFR levels, exam preparation strategies, German literature, language immersion, language learning resources
-image: /assets/images/goethe-c1-preparations.jpeg
+image: /assets/images/goethe-c1-preparations.jpg
 comments: true
 ---
 
@@ -66,7 +66,7 @@ comments: true
     </p>
 
     <p style="text-align: center; margin: 2rem 0;">
-        <img src="/assets/images/goethe-c1-preparations.jpeg" alt="Preparations mess on the table" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <img src="/assets/images/goethe-c1-preparations.jpg" alt="Preparations mess on the table" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     </p>
 
     <h2>How It Started: B1</h2>
