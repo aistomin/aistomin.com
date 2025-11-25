@@ -5,8 +5,8 @@ test.describe('Goethe C1 Exam Blog Post', () => {
     // Navigate to blog page
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
     
-    // Find and click on the Goethe post link
-    const goethePostLink = page.locator('article.blog-post h2 a:has-text("Goethe-Zertifikat C1")');
+    // Find and click on the Goethe C1 Part I post link (be specific since there are multiple Goethe posts)
+    const goethePostLink = page.locator('article.blog-post h2 a:has-text("Part I: The Exam")');
     await expect(goethePostLink).toBeVisible();
     await goethePostLink.click();
     
@@ -153,8 +153,8 @@ test.describe('Goethe C1 Exam Blog Post', () => {
     const nextPostsSection = page.locator('h2:has-text("Next Posts")');
     await expect(nextPostsSection).toBeVisible();
     
-    // Check for "Part II: The Preparations" link
-    const part2Link = page.locator('a:has-text("Part II: The Preparations")');
+    // Check for "Part II: Preparations" link
+    const part2Link = page.locator('a:has-text("Part II: Preparations")');
     await expect(part2Link).toBeVisible();
     
     // Check for "Part III: What\'s Next?" link
