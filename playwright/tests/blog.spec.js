@@ -36,7 +36,7 @@ test.describe('Blog Page', () => {
     // Check preview/excerpt text exists
     const firstExcerpt = firstPost.locator('.post-excerpt');
     await expect(firstExcerpt).toBeVisible();
-    await expect(firstExcerpt).toContainText('In the second part of my "Goethe-Zertifikat C1" trilogy');
+    await expect(firstExcerpt).toContainText('In the second part of my Goethe-Zertifikat C1 trilogy');
     
     // Check "read more" link exists and has correct href
     const firstReadMore = firstPost.locator('a.read-more');
