@@ -301,7 +301,7 @@ comments: true
     </p>
 
     <p>
-        All the specifics of the exam day itself are in <a href="/2025/11/19/goethe-c1-exam.html">Part I</a> of this series.
+        All the specifics of the exam day itself are in <a href="/2025/11/19/goethe-c1-exam.html" target="_blank" rel="noopener noreferrer">Part I</a> of this series.
     </p>
 
     <h2>Conclusion</h2>
