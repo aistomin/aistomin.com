@@ -198,5 +198,17 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     await expect(page).toHaveURL(/\/blog/);
     await expect(page.locator('.page-title')).toHaveText('Thoughts ...');
   });
+
+  test('should display comments section if enabled', async ({ page }) => {
+    await page.goto('/2025/11/25/goethe-c1-preparations', { waitUntil: 'domcontentloaded' });
+    
+    // Check that Disqus comments section exists
+    const commentsSection = page.locator('.comments-section');
+    await expect(commentsSection).toBeVisible();
+    
+    // Check for Disqus thread div
+    const disqusThread = page.locator('#disqus_thread');
+    await expect(disqusThread).toBeVisible();
+  });
 });
 

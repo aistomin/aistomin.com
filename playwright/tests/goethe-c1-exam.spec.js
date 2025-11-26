@@ -161,5 +161,17 @@ test.describe('Goethe C1 Exam Blog Post', () => {
     const part3Link = page.locator('a:has-text("Part III: What\'s Next?")');
     await expect(part3Link).toBeVisible();
   });
+
+  test('should display comments section if enabled', async ({ page }) => {
+    await page.goto('/2025/11/19/goethe-c1-exam', { waitUntil: 'domcontentloaded' });
+    
+    // Check that Disqus comments section exists
+    const commentsSection = page.locator('.comments-section');
+    await expect(commentsSection).toBeVisible();
+    
+    // Check for Disqus thread div
+    const disqusThread = page.locator('#disqus_thread');
+    await expect(disqusThread).toBeVisible();
+  });
 });
 
