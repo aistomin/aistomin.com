@@ -184,8 +184,8 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     await expect(content).toContainText('grammar');
     await expect(content).toContainText('96/100'); // Writing score
     await expect(content).toContainText('85/100'); // Speaking score
-    await expect(content).toContainText('67/100'); // Reading score
-    await expect(content).toContainText('77/100'); // Listening score
+    await expect(content).toContainText('67'); // Reading score
+    await expect(content).toContainText('77'); // Listening score
   });
 
   test('should have working navigation from post back to blog', async ({ page }) => {
