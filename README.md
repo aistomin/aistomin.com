@@ -2,11 +2,11 @@
 
 [![CI/CD](https://github.com/aistomin/aistomin.com/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/aistomin/aistomin.com/actions/workflows/ci-cd.yml)
 
-Andrej Istomin's personal website, built with Jekyll. Visit at https://aistomin.com
+Andrej Istomin's personal website, built with Jekyll. Visit it at https://aistomin.com
 
 ## About
 
-This is where I write about things that interest me - mostly technology, innovation, and the occasional random thought. Sometimes I post about my work and projects too.
+A personal website featuring articles about technology, innovation, and various projects, deployed on GitHub Pages.
 
 ## Local Development
 
@@ -33,7 +33,7 @@ This is where I write about things that interest me - mostly technology, innovat
 
 3. Open your browser and navigate to `http://localhost:4000`
 
-The site will automatically rebuild when you make changes to the source files, and live reload is enabled!
+The site will automatically rebuild when you make changes to the source files. Live reload is enabled.
 
 **Note:** The `start.sh` script rebuilds the Docker image from scratch to ensure you always have the latest changes with no caching issues.
 
@@ -76,7 +76,6 @@ This project includes automated end-to-end tests using [Playwright](https://play
 ### Prerequisites
 
 - Node.js 18+ and npm
-- The website must be running (see Local Development section above)
 
 ### Running E2E Tests
 
@@ -95,7 +94,7 @@ This project includes automated end-to-end tests using [Playwright](https://play
 The script will:
 
 - Install Playwright dependencies if needed (first run only)
-- Check if the website is running at `http://0.0.0.0:4000`
+- Check if the website is running at `http://localhost:4000`
 - Run all E2E tests on Chromium
 - Generate an HTML report
 
@@ -131,18 +130,18 @@ This project uses GitHub Actions for continuous integration and deployment.
 
 **On every push/PR to any branch:**
 
-- Build Jekyll site
-- Run Playwright e2e tests
-- Upload test reports (available in Actions tab)
+- Builds Jekyll site
+- Runs Playwright e2e tests
+- Uploads test reports (available in Actions tab)
 
 **On push to `master` branch (only if tests pass):**
 
-- Deploy to GitHub Pages at https://aistomin.com
+- Deploys to GitHub Pages at https://aistomin.com
 
 **If tests fail:**
 
 - Deployment is blocked
-- Check the Actions tab for test reports
+- Test reports are available in the Actions tab
 
 ### Production Monitoring
 
@@ -204,7 +203,7 @@ This script will:
 - Stop any running containers
 - Start a fresh instance
 - Run all e2e tests
-- Show results
+- Display results
 - Clean up and stop containers
 
 Only commit if all tests pass.
@@ -223,7 +222,7 @@ Go to GitHub and create a pull request from your branch. The CI/CD pipeline will
 
 - Build the site
 - Run e2e tests
-- Report results
+- Report the results
 
 Your PR can only be merged if all tests pass.
 
