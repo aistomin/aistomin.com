@@ -2,7 +2,7 @@
 layout: post
 title: "Goethe-Zertifikat C1 — My Experience, Part III: What's Next?"
 date: 2025-12-07 08:00:00 +0100
-excerpt: 'This is the third and final part of my "Goethe-Zertifikat C1" trilogy. In this part I want to share my thoughts regarding the C2 certification: whether I am going to do it or not and, if yes, what concrete steps I need to take in order to achieve it. So, let me make God laugh and share my plans with you — and with Him.'
+excerpt: "This is the third and final part of my Goethe-Zertifikat C1 trilogy. In this part I want to share my thoughts regarding the C2 certification: whether I am going to do it or not and, if yes, what concrete steps I need to take in order to achieve it. So, let me make God laugh and share my plans with you — and with Him."
 keywords: Goethe C2, German language learning, C1 to C2 journey, German certification, language learning strategy, advanced German, Goethe-Zertifikat preparation, German grammar mastery, German language exam, C2 level planning, German study plan, learning German effectively
 image: /assets/images/goethe-c1-whats-next.jpg
 comments: true
