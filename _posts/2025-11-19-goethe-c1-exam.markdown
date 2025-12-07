@@ -195,7 +195,7 @@ comments: true
 
     <ul>
         <li><a href="/2025/11/25/goethe-c1-preparations.html">Goethe-Zertifikat C1 — My Experience, Part II: Preparations</a></li>
-        <li><a href="/coming-soon/">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
+        <li><a href="/2025/12/07/goethe-c1-whats-next.html">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
     </ul>
 
 </div>

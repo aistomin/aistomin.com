@@ -225,6 +225,25 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+/* Epigraph styles */
+.epigraph {
+    text-align: center;
+    margin: 2rem auto;
+    font-style: italic;
+    color: #555;
+    max-width: 600px;
+}
+
+.epigraph .epigraph-quote {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.epigraph .epigraph-source {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
 .page-title {
     font-size: 2.5rem;
     font-weight: 300;

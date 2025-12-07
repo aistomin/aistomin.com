@@ -25,7 +25,7 @@ layout: default
       const dateDiv = document.createElement('div');
       dateDiv.className = 'post-date-in-header';
       dateDiv.innerHTML =
-        '<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>';
+        '<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>';
       pageHeader.appendChild(dateDiv);
     }
   });

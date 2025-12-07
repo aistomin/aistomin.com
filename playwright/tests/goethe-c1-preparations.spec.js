@@ -163,6 +163,27 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     await expect(part3Link).toBeVisible();
   });
 
+  test('should have correct link to Part III', async ({ page }) => {
+    await page.goto('/2025/11/25/goethe-c1-preparations', { waitUntil: 'domcontentloaded' });
+    
+    // Check that Part III link points to the correct URL (not to coming-soon page)
+    const part3Link = page.locator('a[href="/2025/12/07/goethe-c1-whats-next.html"]');
+    await expect(part3Link).toBeVisible();
+    await expect(part3Link).toContainText('Part III: What\'s Next?');
+  });
+
+  test('should navigate to Part III when clicking the link', async ({ page }) => {
+    await page.goto('/2025/11/25/goethe-c1-preparations', { waitUntil: 'domcontentloaded' });
+    
+    // Find and click Part III link
+    const part3Link = page.locator('a[href="/2025/12/07/goethe-c1-whats-next.html"]');
+    await part3Link.click();
+    
+    // Verify we're on Part III page
+    await expect(page).toHaveURL(/\/2025\/12\/07\/goethe-c1-whats-next/);
+    await expect(page.locator('.page-title')).toContainText('Part III: What\'s Next?');
+  });
+
   test('should display the Goethe Institut logo', async ({ page }) => {
     await page.goto('/2025/11/25/goethe-c1-preparations', { waitUntil: 'domcontentloaded' });
     
