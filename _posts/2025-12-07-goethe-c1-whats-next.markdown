@@ -16,9 +16,9 @@ comments: true
 </div>
 
 <div class="page-content">
-    <div style="text-align: center; margin: 2rem auto; font-style: italic; color: #555; max-width: 600px;">
-        <p style="margin-bottom: 0.5rem; font-size: 1.1rem;">"Homo proponit, sed Deus disponit"</p>
-        <p style="margin-top: 0; font-size: 0.95rem;">— Thomas à Kempis</p>
+    <div class="epigraph">
+        <p class="epigraph-quote">"Homo proponit, sed Deus disponit"</p>
+        <p class="epigraph-source">— Thomas à Kempis</p>
     </div>
     <p>
         This is the third and final part of my "Goethe-Zertifikat C1" trilogy.
