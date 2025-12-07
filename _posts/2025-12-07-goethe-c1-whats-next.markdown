@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Goethe-Zertifikat C1 — My Experience, Part III: What's Next?"
-date: 2025-12-07 12:00:00 +0100
+date: 2025-12-07 08:00:00 +0100
 excerpt: 'This is the third and final part of my "Goethe-Zertifikat C1" trilogy. In this part I want to share my thoughts regarding the C2 certification: whether I am going to do it or not and, if yes, what concrete steps I need to take in order to achieve it. So, let me make God laugh and share my plans with you — and with Him.'
 keywords: Goethe C2, German language learning, C1 to C2 journey, German certification, language learning strategy, advanced German, Goethe-Zertifikat preparation, German grammar mastery, German language exam, C2 level planning, German study plan, learning German effectively
 image: /assets/images/goethe-c1-whats-next.jpg
@@ -34,7 +34,7 @@ comments: true
 
     <h2>To C2 or Not to C2 — That's the Question!</h2>
     <p>
-        I already mentioned in the previous part that my main reason for getting
+        I already mentioned in the <a href="/2025/11/25/goethe-c1-preparations.html" target="_blank" rel="noopener noreferrer">previous part</a> that my main reason for getting
         the C1 level was the desire to read serious German literature and to be
         able to communicate complex thoughts. But does this level really provide
         that? In a broad sense, yes: I can read and even understand Kant, I can
@@ -110,7 +110,7 @@ comments: true
         of real-time speech. Speaking is even worse: whom would I talk to about
         my Kantian research? I don't have anyone around me who would be
         interested in such topics. I was thinking of looking for a — what we
-        Germans call — "Verein" (hobby club, society, association dedicated to a
+        Germans call — <a href="https://www.dw.com/en/get-to-know-the-concept-of-the-german-verein/a-48306152" target="_blank" rel="noopener noreferrer">"Verein"</a> (hobby club, society, association dedicated to a
         certain topic). We have a Verein for everything: sport, stitching,
         bird-watching... maybe there's one for philosophy or at least literature.
         I bet there is; one just needs to take the time and search. Being a
