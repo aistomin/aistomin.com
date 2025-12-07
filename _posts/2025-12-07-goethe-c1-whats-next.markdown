@@ -29,7 +29,7 @@ comments: true
         <img src="/assets/images/goethe-c1-whats-next-large.jpg" alt="Working materials on the table" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     </p>
 
-    <h2>To C2 or not to C2 — That's The Question!</h2>
+    <h2>To C2 or Not to C2 — That's the Question!</h2>
     <p>
         I already mentioned in the previous part that my main reason for getting
         the C1 level was the desire to read serious German literature and to be
@@ -54,7 +54,7 @@ comments: true
         The show must go on.
     </p>
 
-    <h2>What is The Plan?</h2>
+    <h2>What Is the Plan?</h2>
     <p>
         I shouldn't repeat the same mistake I made transitioning from B1 to C1,
         when I was just "learning German", hoping that it would somehow level me
