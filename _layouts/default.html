@@ -25,7 +25,7 @@
     {% if page.image %}<meta property="twitter:image" content="{{ site.url }}{{ page.image }}">{% endif %}
     
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
     {% if jekyll.environment == "production" %}
         <!-- Google tag (gtag.js) -->
