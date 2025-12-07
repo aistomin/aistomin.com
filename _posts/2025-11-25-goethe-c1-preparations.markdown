@@ -292,7 +292,7 @@ comments: true
     <h2>Next Post</h2>
 
     <ul>
-        <li><a href="/coming-soon/">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
+        <li><a href="/2025/12/07/goethe-c1-whats-next.html">Goethe-Zertifikat C1 — My Experience, Part III: What's Next?</a></li>
     </ul>
 
 </div>
