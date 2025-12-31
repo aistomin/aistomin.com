@@ -7,17 +7,9 @@ echo "Pre-commit Test Runner"
 echo "========================================="
 echo ""
 
-# Stop any running containers
-echo "Stopping any running containers..."
-docker compose down -v 2>/dev/null || true
-
-# Clean build artifacts
-echo "Cleaning build artifacts..."
-rm -rf _site .jekyll-cache .jekyll-metadata
-
-# Start the site in background
+# Start the site in background (also cleans up any running containers)
 echo "Starting the website..."
-docker compose up -d
+./start.sh -d
 
 # Wait for the site to be ready
 echo "Waiting for website to start..."
@@ -33,7 +25,7 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
     RETRY_COUNT=$((RETRY_COUNT + 1))
     if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
         echo "✗ ERROR: Website failed to start"
-        docker compose down -v
+        ./stop.sh
         exit 1
     fi
     echo "  Waiting... ($RETRY_COUNT/$MAX_RETRIES)"
@@ -41,48 +33,20 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
 done
 
 echo ""
-echo "========================================="
-echo "Running E2E tests..."
-echo "========================================="
-echo ""
 
-# Run the tests
-cd playwright
-
-# Install dependencies if needed
-if [ ! -d "node_modules" ]; then
-    echo "Installing Playwright dependencies..."
-    npm install
-    npx playwright install --with-deps chromium
-fi
-
-# Run tests and capture exit code
+# Run the E2E tests (captures exit code internally)
 TEST_EXIT_CODE=0
-npm test || TEST_EXIT_CODE=$?
-
-cd ..
+./run-e2e-tests.sh || TEST_EXIT_CODE=$?
 
 echo ""
-echo "========================================="
 
 if [ $TEST_EXIT_CODE -eq 0 ]; then
-    echo "✓ All tests passed!"
-    echo "========================================="
-    echo ""
     echo "Your changes are ready to commit."
 else
-    echo "✗ Tests failed!"
-    echo "========================================="
-    echo ""
     echo "Please fix the failing tests before committing."
 fi
 
 echo ""
-echo "Stopping the website..."
-docker compose down -v
-
-echo ""
-echo "Done!"
+./stop.sh
 
 exit $TEST_EXIT_CODE
-
