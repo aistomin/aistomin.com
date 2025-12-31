@@ -4,7 +4,7 @@ title: 'Happy New Year!'
 date: 2025-12-31 20:00:00 +0100
 excerpt: 'As we step into the new year, I wish everyone good health, prosperity, and—perhaps most importantly—the courage to move on and keep striving. No matter how difficult the road may seem, may you find the strength to pursue your goals and the resilience to rise after every setback.'
 keywords: Happy New Year 2026, new year wishes, new year reflection, resilience, hope, personal growth, new beginnings, year in review, new year goals, moving forward
-image: /assets/images/goethe-c1-whats-next.jpg
+image: /assets/images/happy-new-year.jpg
 comments: true
 ---
 
@@ -21,7 +21,7 @@ comments: true
     </p>
 
     <p style="text-align: center; margin: 2rem 0;">
-        <img src="/assets/images/goethe-c1-whats-next-large.jpg" alt="Working materials on the table" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <img src="/assets/images/happy-new-year-large.jpg" alt="New Year celebration with clock and ornaments" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     </p>
     <p>
         The year behind us was not an easy one. It tested endurance and patience in ways many of us did not expect. Some people lost their loved ones, some faced illness, and others had to rebuild their lives after losing their jobs or their sense of security. These experiences left marks that cannot simply be erased by turning a calendar page.
