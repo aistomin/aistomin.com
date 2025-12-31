@@ -14,10 +14,12 @@ if [ ! -d "node_modules" ]; then
     echo ""
     echo "Installing Playwright dependencies..."
     npm install
-    echo ""
-    echo "Installing Playwright browsers..."
-    npx playwright install --with-deps
 fi
+
+# Always ensure Playwright browsers are installed (idempotent - skips if already present)
+echo ""
+echo "Verifying Playwright browsers are installed..."
+npx playwright install --with-deps
 
 # Check if the website is running
 echo ""
