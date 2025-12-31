@@ -19,7 +19,8 @@ test('should display copyright information in footer', async ({ page }) => {
   
   // Verify it contains copyright symbol, current year, and site name
   await expect(copyrightText).toContainText('©');
-  await expect(copyrightText).toContainText('2025');
+  await expect(copyrightText).toContainText('2025–');
+  await expect(copyrightText).toContainText(new Date().getFullYear().toString());
   await expect(copyrightText).toContainText('Andrej Istomin');
   await expect(copyrightText).toContainText('All rights reserved');
 });
