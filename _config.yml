@@ -9,5 +9,6 @@ url: 'https://aistomin.com'
 plugins:
   - jekyll-feed
   - jekyll-gist
+  - jekyll-sitemap
 
 future: true
