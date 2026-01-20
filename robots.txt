@@ -1,6 +1,6 @@
 # Allow all search engines to crawl the entire site
 User-agent: *
-Allow: /
+Disallow:
 
 # Sitemap location
 Sitemap: https://aistomin.com/sitemap.xml
