@@ -1,10 +1,5 @@
 const { test, expect } = require('@playwright/test');
 
-// Helper to escape special regex characters in a string
-function escapeRegex(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
 test.describe('Sitemap.xml', () => {
     test('should be accessible and return 200', async ({ request }) => {
         const response = await request.get('/sitemap.xml');
@@ -29,38 +24,33 @@ test.describe('Sitemap.xml', () => {
         expect(content).toContain('http://www.sitemaps.org/schemas/sitemap/0.9');
     });
 
-    test('should contain home page URL', async ({ request, baseURL }) => {
+    test('should contain home page URL', async ({ request }) => {
         const response = await request.get('/sitemap.xml');
         const content = await response.text();
 
-        // Should contain the home page (check for baseURL with trailing slash)
-        expect(content).toContain(`<loc>${baseURL}/</loc>`);
+        // Should contain a home page entry (URL ending with just /)
+        // Don't use baseURL - sitemap URLs come from Jekyll config, not Playwright
+        expect(content).toMatch(/<loc>https?:\/\/[^<]+\/<\/loc>/);
     });
 
-    test('should contain main pages', async ({ request, baseURL }) => {
+    test('should contain main pages', async ({ request }) => {
         const response = await request.get('/sitemap.xml');
         const content = await response.text();
 
-        // Should contain About page
-        expect(content).toContain(`${baseURL}/about`);
-
-        // Should contain Blog page
-        expect(content).toContain(`${baseURL}/blog`);
-
-        // Should contain Certificates page
-        expect(content).toContain(`${baseURL}/certificates`);
+        // Check for page paths regardless of domain
+        expect(content).toMatch(/<loc>[^<]*\/about[^<]*<\/loc>/);
+        expect(content).toMatch(/<loc>[^<]*\/blog[^<]*<\/loc>/);
+        expect(content).toMatch(/<loc>[^<]*\/certificates[^<]*<\/loc>/);
     });
 
-    test('should contain blog posts', async ({ request, baseURL }) => {
+    test('should contain blog posts', async ({ request }) => {
         const response = await request.get('/sitemap.xml');
         const content = await response.text();
 
         // Should contain at least one blog post URL pattern
         // Blog posts follow the pattern /YYYY/MM/DD/slug.html
-        // Escape the baseURL for regex usage
-        const escapedBaseURL = escapeRegex(baseURL);
-        const blogPostPattern = new RegExp(`<loc>${escapedBaseURL}/\\d{4}/\\d{2}/\\d{2}/[\\w-]+\\.html</loc>`);
-        expect(content).toMatch(blogPostPattern);
+        // Don't use baseURL - just check for the path pattern
+        expect(content).toMatch(/<loc>[^<]*\/\d{4}\/\d{2}\/\d{2}\/[\w-]+\.html<\/loc>/);
     });
 
     test('should have lastmod dates for entries', async ({ request }) => {
