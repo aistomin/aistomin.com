@@ -86,4 +86,12 @@ test.describe('Sitemap.xml', () => {
         // Should NOT contain any playwright test paths
         expect(content).not.toContain('/playwright/');
     });
+
+    test('should not contain coming-soon placeholder page', async ({ request }) => {
+        const response = await request.get('/sitemap.xml');
+        const content = await response.text();
+
+        // Should NOT contain the coming-soon placeholder page
+        expect(content).not.toContain('/coming-soon/');
+    });
 });
