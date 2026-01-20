@@ -1,5 +1,10 @@
 const { test, expect } = require('@playwright/test');
 
+// Helper to escape special regex characters in a string
+function escapeRegex(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 test.describe('Sitemap.xml', () => {
     test('should be accessible and return 200', async ({ request }) => {
         const response = await request.get('/sitemap.xml');
@@ -21,17 +26,15 @@ test.describe('Sitemap.xml', () => {
 
         // Should contain urlset element with sitemap namespace
         expect(content).toContain('<urlset');
-        expect(content).toContain('http://www.sitemaps.org/schemas/sitemap/');
+        expect(content).toContain('http://www.sitemaps.org/schemas/sitemap/0.9');
     });
 
     test('should contain home page URL', async ({ request, baseURL }) => {
         const response = await request.get('/sitemap.xml');
         const content = await response.text();
 
-        // Should contain the home page (either trailing slash or not)
-        // Use baseURL to make test environment-agnostic
-        const homeUrlPattern = new RegExp(`<loc>${baseURL}/?</loc>`);
-        expect(content).toMatch(homeUrlPattern);
+        // Should contain the home page (check for baseURL with trailing slash)
+        expect(content).toContain(`<loc>${baseURL}/</loc>`);
     });
 
     test('should contain main pages', async ({ request, baseURL }) => {
@@ -54,7 +57,9 @@ test.describe('Sitemap.xml', () => {
 
         // Should contain at least one blog post URL pattern
         // Blog posts follow the pattern /YYYY/MM/DD/slug.html
-        const blogPostPattern = new RegExp(`<loc>${baseURL}/\\d{4}/\\d{2}/\\d{2}/[\\w-]+\\.html</loc>`);
+        // Escape the baseURL for regex usage
+        const escapedBaseURL = escapeRegex(baseURL);
+        const blogPostPattern = new RegExp(`<loc>${escapedBaseURL}/\\d{4}/\\d{2}/\\d{2}/[\\w-]+\\.html</loc>`);
         expect(content).toMatch(blogPostPattern);
     });
 
