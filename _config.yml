@@ -11,4 +11,14 @@ plugins:
   - jekyll-gist
   - jekyll-sitemap
 
+# Exclude from Jekyll build
+exclude:
+  - playwright
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
+  - "*.sh"
+
 future: true
