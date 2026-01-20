@@ -2,6 +2,7 @@
 layout: default
 title: Coming Soon
 permalink: /coming-soon/
+sitemap: false
 ---
 
 <style>
