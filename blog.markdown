@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: "Blog — Thoughts on Tech, Life & Languages"
 ---
 
 <div class="page-header">

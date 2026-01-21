@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Coming Soon
+title: "Coming Soon — New Content on the Way"
 permalink: /coming-soon/
 sitemap: false
 ---

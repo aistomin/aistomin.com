@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: "About Me — My Story"
 ---
 
 <div class="page-header">

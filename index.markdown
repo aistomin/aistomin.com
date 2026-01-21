@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: "Software Engineer, Musician & Philosopher"
 ---
 
 <div class="hero">

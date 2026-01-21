@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Certificates
+title: "Certificates & Achievements"
 ---
 
 <div class="page-header">
