@@ -6,7 +6,7 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
     
     // Find and click on the Goethe C1 Part II post link (be specific since there are multiple Goethe posts)
-    const goethePostLink = page.locator('article.blog-post h2 a:has-text("Part II: Preparations")');
+    const goethePostLink = page.locator('article.blog-post h2 a:has-text("Preparations (Part II)")');
     await expect(goethePostLink).toBeVisible();
     await goethePostLink.click();
     
@@ -19,7 +19,7 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     
     const title = page.locator('.page-title');
     await expect(title).toBeVisible();
-    await expect(title).toHaveText('Goethe-Zertifikat C1 — My Experience, Part II: Preparations');
+    await expect(title).toHaveText('Goethe-Zertifikat C1 — Preparations (Part II)');
   });
 
   test('should display the publishing date', async ({ page }) => {
@@ -158,8 +158,8 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     const nextPostSection = page.locator('h2:has-text("Next Post")');
     await expect(nextPostSection).toBeVisible();
     
-    // Check for "Part III: What's Next?" link
-    const part3Link = page.locator('a:has-text("Part III: What\'s Next?")');
+    // Check for "What's Next? (Part III)" link
+    const part3Link = page.locator('a:has-text("What\'s Next? (Part III)")');
     await expect(part3Link).toBeVisible();
   });
 
@@ -169,7 +169,7 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     // Check that Part III link points to the correct URL (not to coming-soon page)
     const part3Link = page.locator('a[href="/2025/12/07/goethe-c1-whats-next.html"]');
     await expect(part3Link).toBeVisible();
-    await expect(part3Link).toContainText('Part III: What\'s Next?');
+    await expect(part3Link).toContainText('What\'s Next? (Part III)');
   });
 
   test('should navigate to Part III when clicking the link', async ({ page }) => {
@@ -181,7 +181,7 @@ test.describe('Goethe C1 Preparations Blog Post', () => {
     
     // Verify we're on Part III page
     await expect(page).toHaveURL(/\/2025\/12\/07\/goethe-c1-whats-next/);
-    await expect(page.locator('.page-title')).toContainText('Part III: What\'s Next?');
+    await expect(page.locator('.page-title')).toContainText('What\'s Next? (Part III)');
   });
 
   test('should display the Goethe Institut logo', async ({ page }) => {

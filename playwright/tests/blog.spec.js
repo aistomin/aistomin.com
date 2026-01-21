@@ -49,7 +49,7 @@ test.describe('Blog Page', () => {
     
     // Check title exists and has correct text
     const secondTitle = secondPost.locator('h2 a');
-    await expect(secondTitle).toHaveText('Goethe-Zertifikat C1 — My Experience, Part III: What\'s Next?');
+    await expect(secondTitle).toHaveText('Goethe-Zertifikat C1 — What\'s Next? (Part III)');
     
     // Check date exists and has correct format
     const secondDate = secondPost.locator('.post-meta time');
@@ -72,7 +72,7 @@ test.describe('Blog Page', () => {
     
     // Check title exists and has correct text
     const thirdTitle = thirdPost.locator('h2 a');
-    await expect(thirdTitle).toHaveText('Goethe-Zertifikat C1 — My Experience, Part II: Preparations');
+    await expect(thirdTitle).toHaveText('Goethe-Zertifikat C1 — Preparations (Part II)');
     
     // Check date exists and has correct format
     const thirdDate = thirdPost.locator('.post-meta time');
@@ -95,7 +95,7 @@ test.describe('Blog Page', () => {
     
     // Check title exists and has correct text
     const fourthTitle = fourthPost.locator('h2 a');
-    await expect(fourthTitle).toHaveText('Goethe-Zertifikat C1 — My Experience, Part I: The Exam');
+    await expect(fourthTitle).toHaveText('Goethe-Zertifikat C1 — The Exam (Part I)');
     
     // Check date exists and has correct format
     const fourthDate = fourthPost.locator('.post-meta time');

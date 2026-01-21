@@ -6,7 +6,7 @@ test.describe('Goethe C1 What\'s Next Blog Post', () => {
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
     
     // Find and click on the Goethe C1 Part III post link (be specific since there are multiple Goethe posts)
-    const goethePostLink = page.locator('article.blog-post h2 a:has-text("Part III: What\'s Next?")');
+    const goethePostLink = page.locator('article.blog-post h2 a:has-text("What\'s Next? (Part III)")');
     await expect(goethePostLink).toBeVisible();
     await goethePostLink.click();
     
@@ -19,7 +19,7 @@ test.describe('Goethe C1 What\'s Next Blog Post', () => {
     
     const title = page.locator('.page-title');
     await expect(title).toBeVisible();
-    await expect(title).toHaveText('Goethe-Zertifikat C1 — My Experience, Part III: What\'s Next?');
+    await expect(title).toHaveText('Goethe-Zertifikat C1 — What\'s Next? (Part III)');
   });
 
   test('should display the publishing date', async ({ page }) => {
