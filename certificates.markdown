@@ -4,7 +4,7 @@ title: "Certificates & Achievements"
 ---
 
 <div class="page-header">
-    <h1 class="page-title">Badges & Certificates</h1>
+    <h1 class="page-title">Certificates & Achievements</h1>
 </div>
 
 <div class="page-content">
