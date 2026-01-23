@@ -10,7 +10,7 @@ test.describe('Blog Page', () => {
     
     // Verify we're on the blog page
     await expect(page).toHaveURL(/\/blog/);
-    await expect(page.locator('.page-title')).toHaveText('Thoughts ...');
+    await expect(page.locator('.page-title')).toHaveText('Random Thoughts from a Wandering Mind');
   });
 
   test('should display five blog posts with all required elements', async ({ page }) => {

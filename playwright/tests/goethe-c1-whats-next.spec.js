@@ -141,7 +141,7 @@ test.describe('Goethe C1 What\'s Next Blog Post', () => {
     
     // Verify we're back on the blog page
     await expect(page).toHaveURL(/\/blog/);
-    await expect(page.locator('.page-title')).toHaveText('Thoughts ...');
+    await expect(page.locator('.page-title')).toHaveText('Random Thoughts from a Wandering Mind');
   });
 
   test('should display comments section if enabled', async ({ page }) => {
