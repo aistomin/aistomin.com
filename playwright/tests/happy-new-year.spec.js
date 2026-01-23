@@ -6,7 +6,7 @@ test.describe('Happy New Year Blog Post', () => {
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
     
     // Find and click on the Happy New Year post link
-    const postLink = page.locator('article.blog-post h2 a:has-text("Happy New Year!")');
+    const postLink = page.locator('article.blog-post h2 a:has-text("Happy New Year 2026")');
     await expect(postLink).toBeVisible();
     await postLink.click();
     
