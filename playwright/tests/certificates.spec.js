@@ -10,7 +10,7 @@ test.describe('Certificates Page', () => {
 
     // Verify we're on the certificates page
     await expect(page).toHaveURL(/\/certificates/);
-    await expect(page.locator('.page-title')).toHaveText('Certificates & Achievements');
+    await expect(page.locator('.page-title')).toHaveText('Certificates & Professional Achievements');
   });
 
   test('should display all required elements on certificates page', async ({ page }) => {
@@ -20,7 +20,7 @@ test.describe('Certificates Page', () => {
     // 1. Test title exists
     const title = page.locator('.page-title');
     await expect(title).toBeVisible();
-    await expect(title).toHaveText('Certificates & Achievements');
+    await expect(title).toHaveText('Certificates & Professional Achievements');
 
     // 2. Test photo exists
     const photo = page.locator('.about-photo');

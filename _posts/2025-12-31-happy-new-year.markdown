@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Happy New Year!'
+title: 'Happy New Year 2026 — Wishes and Reflections'
 date: 2025-12-31 18:00:00 +0100
 excerpt: 'As we step into the new year, I wish everyone good health, prosperity, and—perhaps most importantly—the courage to move on and keep striving. No matter how difficult the road may seem, may you find the strength to pursue your goals and the resilience to rise after every setback.'
 keywords: Happy New Year 2026, new year wishes, new year reflection, resilience, hope, personal growth, new beginnings, year in review, new year goals, moving forward

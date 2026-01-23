@@ -6,7 +6,7 @@ test.describe('Welcome Blog Post', () => {
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
     
     // Find and click on the Welcome post link
-    const welcomePostLink = page.locator('article.blog-post h2 a:has-text("Welcome To My New Website")');
+    const welcomePostLink = page.locator('article.blog-post h2 a:has-text("Welcome To My New Website — Hello World!")');
     await expect(welcomePostLink).toBeVisible();
     await welcomePostLink.click();
     

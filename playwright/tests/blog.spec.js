@@ -26,7 +26,7 @@ test.describe('Blog Page', () => {
     
     // Check title exists and has correct text
     const firstTitle = firstPost.locator('h2 a');
-    await expect(firstTitle).toHaveText('Happy New Year!');
+    await expect(firstTitle).toHaveText('Happy New Year 2026 — Wishes and Reflections');
     
     // Check date exists and has correct format
     const firstDate = firstPost.locator('.post-meta time');
@@ -118,7 +118,7 @@ test.describe('Blog Page', () => {
     
     // Check title exists and has correct text
     const fifthTitle = fifthPost.locator('h2 a');
-    await expect(fifthTitle).toHaveText('Welcome To My New Website');
+    await expect(fifthTitle).toHaveText('Welcome To My New Website — Hello World!');
     
     // Check date exists and has correct format
     const fifthDate = fifthPost.locator('.post-meta time');
