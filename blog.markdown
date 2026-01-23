@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Blog — Thoughts on Tech, Life & Languages"
+title: "Blog — Random Thoughts from a Wandering Mind"
 ---
 
 <div class="page-header">
-    <h1 class="page-title">Thoughts ...</h1>
+    <h1 class="page-title">Random Thoughts from a Wandering Mind</h1>
 </div>
 
 <div class="page-content">
