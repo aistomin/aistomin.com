@@ -8,21 +8,23 @@ test.describe('Home Page', () => {
     // Verify we're on the home page
     await expect(page).toHaveURL(/\/$/);
     await expect(page.locator('.hero h1')).toHaveText('Andrej Istomin');
+    await expect(page).toHaveTitle('Software Engineer, Musician & Wandering Philosopher - Andrej Istomin');
   });
 
   test('should display all required elements on home page', async ({ page }) => {
     // Navigate to home page
     await page.goto('/', { waitUntil: 'domcontentloaded' });
     
-    // 1. Test title exists
-    const title = page.locator('.hero h1');
-    await expect(title).toBeVisible();
-    await expect(title).toHaveText('Andrej Istomin');
+    // 1. Test page title and header both exist
+    const header = page.locator('.hero h1');
+    await expect(header).toBeVisible();
+    await expect(header).toHaveText('Andrej Istomin');
+    await expect(page).toHaveTitle('Software Engineer, Musician & Wandering Philosopher - Andrej Istomin');
     
-    // 2. Test subtitle exists
-    const subtitle = page.locator('.hero .subtitle');
-    await expect(subtitle).toBeVisible();
-    await expect(subtitle).toHaveText('Software engineer, hobby musician, wandering philosopher');
+    // 2. Test subheader exists
+    const subheader = page.locator('.hero .subtitle');
+    await expect(subheader).toBeVisible();
+    await expect(subheader).toHaveText('Software Engineer, Musician & Wandering Philosopher');
     
     // 3. Test picture exists
     const photo = page.locator('.hero-photo');

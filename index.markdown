@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Software Engineer, Musician & Philosopher"
+title: 'Software Engineer, Musician & Wandering Philosopher'
 ---
 
 <div class="hero">
     <h1>Andrej Istomin</h1>
-    <p class="subtitle">Software engineer, hobby musician, wandering philosopher</p>
+    <p class="subtitle">Software Engineer, Musician & Wandering Philosopher</p>
     
     <img src="/assets/images/profile.jpg" alt="Andrej Istomin" class="hero-photo" onerror="this.style.display='none'">
     
