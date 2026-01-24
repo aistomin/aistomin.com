@@ -149,7 +149,7 @@ test.describe('Blog Page', () => {
     
     // Verify we're on the correct post page
     await expect(page).toHaveURL(/\/2025\/12\/31\/happy-new-year/);
-    await expect(page.locator('.page-title')).toHaveText('Happy New Year!');
+    await expect(page.locator('.page-title')).toHaveText('Happy New Year 2026 — Wishes and Reflections');
     
     // Go back to blog page
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
@@ -193,7 +193,7 @@ test.describe('Blog Page', () => {
     
     // Verify we're on the correct post page
     await expect(page).toHaveURL(/\/2025\/10\/11\/welcome/);
-    await expect(page.locator('.page-title')).toHaveText('Welcome To My New Website');
+    await expect(page.locator('.page-title')).toHaveText('Welcome To My New Website — Hello World!');
   });
 
   test('should navigate to correct post pages via title links', async ({ page }) => {
@@ -208,7 +208,7 @@ test.describe('Blog Page', () => {
     
     // Verify we're on the correct post page
     await expect(page).toHaveURL(/\/2025\/12\/31\/happy-new-year/);
-    await expect(page.locator('.page-title')).toHaveText('Happy New Year!');
+    await expect(page.locator('.page-title')).toHaveText('Happy New Year 2026 — Wishes and Reflections');
     
     // Go back to blog page
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
@@ -252,7 +252,7 @@ test.describe('Blog Page', () => {
     
     // Verify we're on the correct post page
     await expect(page).toHaveURL(/\/2025\/10\/11\/welcome/);
-    await expect(page.locator('.page-title')).toHaveText('Welcome To My New Website');
+    await expect(page.locator('.page-title')).toHaveText('Welcome To My New Website — Hello World!');
   });
 });
 
