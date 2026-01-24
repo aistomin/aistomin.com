@@ -19,7 +19,7 @@ test.describe('Welcome Blog Post', () => {
     
     const title = page.locator('.page-title');
     await expect(title).toBeVisible();
-    await expect(title).toHaveText('Welcome To My New Website');
+    await expect(title).toHaveText('Welcome To My New Website — Hello World!');
   });
 
   test('should display the publishing date', async ({ page }) => {

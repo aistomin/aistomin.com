@@ -12,7 +12,7 @@ comments: true
     <div style="text-align: center; margin-bottom: 0.5rem;">
         <img src="/assets/images/new-year-2026.svg" alt="Happy New Year 2026" style="height: 4rem; width: auto;">
     </div>
-    <h1 class="page-title">Happy New Year!</h1>
+    <h1 class="page-title">Happy New Year 2026 — Wishes and Reflections</h1>
 </div>
 
 <div class="page-content">

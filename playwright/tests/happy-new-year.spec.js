@@ -19,7 +19,7 @@ test.describe('Happy New Year Blog Post', () => {
     
     const title = page.locator('.page-title');
     await expect(title).toBeVisible();
-    await expect(title).toHaveText('Happy New Year!');
+    await expect(title).toHaveText('Happy New Year 2026 — Wishes and Reflections');
   });
 
   test('should display the publishing date', async ({ page }) => {

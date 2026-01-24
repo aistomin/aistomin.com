@@ -48,7 +48,7 @@ sitemap: false
 
 <div class="coming-soon-container">
     <div class="coming-soon-icon">📝</div>
-    <h1 class="coming-soon-title">Coming Soon</h1>
+    <h1 class="coming-soon-title">Coming Soon — New Content Is on the Way</h1>
     <p class="coming-soon-message">
         I'm currently working on this content. Check back soon for updates, or visit the blog to read other articles in the meantime.
     </p>
