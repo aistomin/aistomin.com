@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "About Me — Engineer, Musician & Philosopher"
+description: "Learn about Andrej Istomin — a software engineer from Bishkek now based in Germany, exploring the intersection of code, classical music, and philosophy."
 ---
 
 <div class="page-header">

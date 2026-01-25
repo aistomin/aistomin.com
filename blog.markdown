@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Blog — Random Thoughts from a Wandering Mind"
+description: "Random thoughts from a wandering mind — articles on software engineering, German language learning, music, philosophy, and personal growth by Andrej Istomin."
 ---
 
 <div class="page-header">
