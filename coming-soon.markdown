@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Coming Soon — New Content on the Way"
+description: "New content coming soon. Stay tuned for upcoming articles on software engineering, language learning, and philosophical musings from Andrej Istomin."
 permalink: /coming-soon/
 sitemap: false
 ---

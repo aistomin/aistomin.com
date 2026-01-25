@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Certificates & Professional Achievements"
+description: "Professional certifications and achievements of Andrej Istomin, including the Goethe-Zertifikat C1 German language certification from Goethe-Institut Munich."
 ---
 
 <div class="page-header">
