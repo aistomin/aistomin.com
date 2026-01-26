@@ -8,7 +8,7 @@ test.describe('Home Page', () => {
     // Verify we're on the home page
     await expect(page).toHaveURL(/\/$/);
     await expect(page.locator('.hero h1')).toHaveText('Andrej Istomin');
-    await expect(page).toHaveTitle('Software Engineer, Musician & Wandering Philosopher - Andrej Istomin');
+    await expect(page).toHaveTitle('Engineer, Musician & Philosopher - Andrej Istomin');
   });
 
   test('should display all required elements on home page', async ({ page }) => {
@@ -19,7 +19,7 @@ test.describe('Home Page', () => {
     const header = page.locator('.hero h1');
     await expect(header).toBeVisible();
     await expect(header).toHaveText('Andrej Istomin');
-    await expect(page).toHaveTitle('Software Engineer, Musician & Wandering Philosopher - Andrej Istomin');
+    await expect(page).toHaveTitle('Engineer, Musician & Philosopher - Andrej Istomin');
     
     // 2. Test subheader exists
     const subheader = page.locator('.hero .subtitle');
