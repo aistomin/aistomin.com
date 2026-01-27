@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'Engineer, Musician & Philosopher'
-description: "Welcome to Andrej Istomin's personal website. Software engineer sharing thoughts on code, music, philosophy, and the journey of continuous learning."
+description: "Welcome to Andrej Istomin's personal website. A software engineer based in Germany, sharing thoughts on code, music, philosophy, and the journey of continuous learning."
 ---
 
 <div class="hero">
