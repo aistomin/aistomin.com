@@ -1,7 +1,7 @@
 title: Andrej Istomin
 email: your-email@example.com
 description: >-
-  Software engineer, hobby musician, wandering philosopher.
+  Software Engineer, Musician & Wandering Philosopher
 
 baseurl: ''
 url: 'https://aistomin.com'
@@ -19,6 +19,6 @@ exclude:
   - README.md
   - Dockerfile
   - docker-compose.yml
-  - "*.sh"
+  - '*.sh'
 
 future: true
