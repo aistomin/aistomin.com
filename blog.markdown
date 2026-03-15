@@ -1,15 +1,16 @@
 ---
 layout: default
-title: "Blog — Random Thoughts from a Wandering Mind"
-description: "Random thoughts from a wandering mind — articles on software engineering, German language learning, music, philosophy, and personal growth by Andrej Istomin."
+title: 'Blog — Essays About Everything and Nothing'
+description: "Writing on what I'm building, studying, and thinking about. Notes and essays on software, exams, side projects, and other pursuits."
+image: /assets/images/blog-og.jpg
 ---
 
 <div class="page-header">
-    <h1 class="page-title">Random Thoughts from a Wandering Mind</h1>
+    <h1 class="page-title">Essays About Everything and Nothing</h1>
 </div>
 
 <div class="page-content">
-    <img src="/assets/images/drunk.jpg" alt="Andrej far from being sober" class="blog-photo" onerror="this.style.display='none'">
+    <img src="/assets/images/blog.jpg" alt="Andrej Istomin" class="blog-photo" onerror="this.style.display='none'">
     
     <div class="blog-posts">
         {% for post in site.posts %}
