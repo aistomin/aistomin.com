@@ -476,11 +476,16 @@ a:hover {
         padding: 0 1rem;
     }
     
+    .page-header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .page-content {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
     .hero {
         padding-left: 1rem;
         padding-right: 1rem;
