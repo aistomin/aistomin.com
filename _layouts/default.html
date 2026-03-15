@@ -17,6 +17,7 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
     {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}">{% endif %}
+    {% if site.url %}<meta property="og:logo" content="{{ site.url }}/favicon.ico">{% endif %}
     
     <!-- Twitter -->
     <meta property="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
