@@ -17,6 +17,12 @@ test.describe('Blog Page', () => {
     // Navigate to blog page
     await page.goto('/blog', { waitUntil: 'domcontentloaded' });
     
+    // Check blog intro description is present
+    const blogDescription = page.locator('.blog-description');
+    await expect(blogDescription).toBeVisible();
+    await expect(blogDescription).toContainText('This is where I put longer pieces and shorter notes');
+    await expect(blogDescription).toContainText('just writing when something feels worth saying');
+    
     // Verify there are exactly 3 blog posts
     const posts = page.locator('article.blog-post');
     await expect(posts).toHaveCount(3);

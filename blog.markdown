@@ -12,7 +12,7 @@ image: /assets/images/blog-og.jpg
 <div class="page-content">
     <img src="/assets/images/blog.jpg" alt="Andrej Istomin" class="blog-photo" onerror="this.style.display='none'">
     <p class="blog-description">
-    This is where I put longer pieces and shorter notes: What I’m building, what I’m studying, and what I’m thinking about. The topics move between software, exams, side projects, and whatever else holds my attention. There’s no single theme and no fixed schedule — just writing when something feels worth saying. If it’s useful to you too, that’s a bonus.
+    This is where I put longer pieces and shorter notes: What I’m building, what I’m studying, and what I’m thinking about. The topics include work, hobbies, side projects, and whatever else holds my attention. There’s no single theme and no fixed schedule — just writing when something feels worth saying.
     </p>
     <div class="blog-posts">
         {% for post in site.posts %}
