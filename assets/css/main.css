@@ -297,6 +297,15 @@ a:hover {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+.blog-description {
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 100%;
+    font-style: italic;
+}
+
 .wedding-photo {
     width: 200px;
     height: 200px;
