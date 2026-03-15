@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'Blog — Essays About Everything and Nothing'
-description: "Writing on what I'm building, studying, and thinking about. Notes and essays on software, exams, side projects, and other pursuits."
+description: "Writing on what I'm building, studying, and thinking about. Notes and essays on work, hobbies, side projects, and other pursuits."
 image: /assets/images/blog-og.jpg
 ---
 
