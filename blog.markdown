@@ -6,7 +6,7 @@ image: /assets/images/blog-og.jpg
 ---
 
 <div class="page-header">
-    <h1 class="page-title">Essays About Everything and Nothing: What I Build, Study, and Think About</h1>
+    <h1 class="page-title">Essays About Everything and Nothing</h1>
 </div>
 
 <div class="page-content">

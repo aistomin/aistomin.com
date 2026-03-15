@@ -14,14 +14,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
     {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}">{% endif %}
     
     <!-- Twitter -->
     <meta property="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
     <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="twitter:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
     {% if page.image %}<meta property="twitter:image" content="{{ site.url }}{{ page.image }}">{% endif %}
     
