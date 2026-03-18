@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Engineer, Musician & Philosopher'
+title: 'Software Engineer, Musician & Philosopher'
 description: "Welcome to Andrej Istomin's personal website. This space is where I keep notes and thoughts — nothing polished, just real. I'm a software engineer. I write about my work, hobbies and interests."
 image: /assets/images/home-og.jpg
 ---
