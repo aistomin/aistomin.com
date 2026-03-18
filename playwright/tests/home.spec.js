@@ -35,8 +35,8 @@ test.describe('Home Page', () => {
     // 4. Test text content
     const description = page.locator('.hero-description');
     await expect(description).toBeVisible();
-    await expect(description).toContainText('Welcome. This space is where I keep traces of my work and thoughts — nothing polished, just real.');
-    await expect(description).toContainText('That\'s how I approach engineering too: systems that last, code that makes sense, and projects that deliver for the customer.');
+    await expect(description).toContainText('Welcome. This space is where I keep notes and thoughts — nothing polished, just real.');
+    await expect(description).toContainText('I’m a software engineer. I write about what I’m building');
     
     // 5. Test social media links section exists
     const socialLinks = page.locator('.hero-contact .social-links');
@@ -93,7 +93,7 @@ test.describe('Home Page', () => {
     await page.goto('/', { waitUntil: 'domcontentloaded' });
     
     // Verify we're on home page by checking for text from the middle
-    await expect(page.locator('.hero-description')).toContainText('systems that last, code that makes sense');
+    await expect(page.locator('.hero-description')).toContainText('nothing polished, just real');
     
     // Click on About menu item
     await page.click('.nav-menu li a:has-text("About")');
@@ -112,7 +112,7 @@ test.describe('Home Page', () => {
     await expect(page).toHaveURL(/\/$/);
     
     // Check for text from the middle of home page
-    await expect(page.locator('.hero-description')).toContainText('systems that last, code that makes sense');
+    await expect(page.locator('.hero-description')).toContainText('nothing polished, just real');
   });
 
   test('should have active class on Home menu item', async ({ page }) => {
@@ -161,7 +161,7 @@ test.describe('Home Page', () => {
     await expect(page).toHaveURL(/\/$/);
     
     // Verify Home page text is visible
-    await expect(page.locator('.hero-description')).toContainText('systems that last, code that makes sense');
+    await expect(page.locator('.hero-description')).toContainText('nothing polished, just real');
   });
 });
 

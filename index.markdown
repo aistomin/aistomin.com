@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 'Engineer, Musician & Philosopher'
-description: "Welcome to Andrej Istomin's personal website. A software engineer based in Germany, sharing thoughts on code, music, philosophy, and the journey of continuous learning."
+description: "Welcome to Andrej Istomin's personal website. This space is where I keep notes and thoughts — nothing polished, just real. I'm a software engineer. I write about my work, hobbies and interests."
+image: /assets/images/home-og.jpg
 ---
 
 <div class="hero">
@@ -11,11 +12,17 @@ description: "Welcome to Andrej Istomin's personal website. A software engineer 
     <img src="/assets/images/profile.jpg" alt="Andrej Istomin" class="hero-photo" onerror="this.style.display='none'">
     
     <div class="hero-description">
-        <p>Welcome. This space is where I keep traces of my work and thoughts — nothing polished, just real.</p> <p>That's how I approach engineering too: systems that last, code that makes sense, and projects that deliver for the customer.</p>
+        <p>
+            Welcome. This space is where I keep notes and thoughts — nothing polished, just real.
+        </p>
+        <p>
+            I’m a software engineer. I write about what I’m building and what I do outside work: music, books, and languages.
+        </p>
     </div>
-    
+
     <div class="hero-contact">
         <p>Follow me:</p>
         {% include follow-links.html %}
     </div>
+
 </div>
