@@ -9,7 +9,7 @@ image: /assets/images/home-og.jpg
     <h1>Andrej Istomin</h1>
     <p class="subtitle">Software Engineer, Musician & Wandering Philosopher</p>
     
-    <img src="/assets/images/profile.jpg" alt="Andrej Istomin" class="hero-photo" onerror="this.style.display='none'">
+    <img src="/assets/images/home.jpg" alt="Andrej Istomin" class="hero-photo" onerror="this.style.display='none'">
     
     <div class="hero-description">
         <p>

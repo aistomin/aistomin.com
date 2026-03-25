@@ -29,7 +29,7 @@ test.describe('Home Page', () => {
     // 3. Test picture exists
     const photo = page.locator('.hero-photo');
     await expect(photo).toBeVisible();
-    await expect(photo).toHaveAttribute('src', '/assets/images/profile.jpg');
+    await expect(photo).toHaveAttribute('src', '/assets/images/home.jpg');
     await expect(photo).toHaveAttribute('alt', 'Andrej Istomin');
     
     // 4. Test text content
