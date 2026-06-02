@@ -64,7 +64,7 @@ test.describe('Home Page', () => {
     
     // Test Xing link
     const xingLink = socialLinks.nth(1);
-    await expect(xingLink).toHaveAttribute('href', 'https://www.xing.com/profile/Andrei_Istomin');
+    await expect(xingLink).toHaveAttribute('href', 'https://www.xing.com/profile/Andrej_Istomin');
     await expect(xingLink).toHaveAttribute('aria-label', 'Xing');
     
     // Test Upwork link
