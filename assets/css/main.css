@@ -364,6 +364,11 @@ a:hover {
 }
 
 /* Certificates */
+.goethe-logo {
+    height: 3rem;
+    width: auto;
+}
+
 .certificates-list {
     margin-top: 2rem;
 }

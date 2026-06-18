@@ -16,7 +16,7 @@ description: "Professional certifications and achievements of Andrej Istomin, in
     <div class="certificates-list">
         <div class="certificate-item">
             <div class="certificate-icon">
-                <img src="/assets/images/goethe-institut.png" alt="Goethe-Institut" width="80" height="80">
+                <img src="/assets/images/goethe-institut.png" alt="Goethe-Institut" class="goethe-logo">
             </div>
             <div class="certificate-details">
                 <h3>Goethe-Zertifikat C1</h3>
