@@ -10,7 +10,7 @@ comments: true
 
 <div class="page-header">
     <div style="text-align: center; margin-bottom: 0.5rem;">
-        <img src="/assets/images/goethe-institut.png" alt="Goethe Institut" style="height: 3rem; width: auto;">
+        <img src="/assets/images/goethe-institut.png" alt="Goethe Institut" class="goethe-logo">
     </div>
     <h1 class="page-title">Goethe-Zertifikat C1 — Preparations (Part II)</h1>
 </div>
