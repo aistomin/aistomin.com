@@ -36,6 +36,6 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # gem "jekyll-remote-theme", "~> 0.4.1"
-gem "csv", "~> 3.2"
+gem "csv", "~> 3.3"
 gem "base64", "~> 0.1"
 gem "logger", "~> 1.5"
