@@ -50,6 +50,8 @@ Jekyll 4.4 static site for https://aistomin.com (personal site: home, about, blo
 
 `start.sh` wipes `_site`, `.jekyll-cache`, `.jekyll-metadata` and rebuilds the image, so there is no stale-cache class of bug — if the site looks wrong, it is the source.
 
+Everything above except `cleanup_branches.sh` needs the Docker daemon up — check it with `docker info` before you rely on it, and ask the user to start Docker Desktop if it is down.
+
 Non-Docker alternative: `bundle install && bundle exec jekyll serve`.
 
 Playwright commands (from `playwright/`):
@@ -171,6 +173,18 @@ implementation is not approval to commit, approving the commit is not approval t
 
 5. **Propose the changes — do not make them yet.** Describe what will change, in which files, and
    which Playwright specs need to follow. Edit files only after an explicit go.
+
+   Check the Docker daemon as part of the proposal, not later:
+
+   ```bash
+   docker info --format '{{.ServerVersion}}'
+   ```
+
+   `./test-before-commit.sh` runs the site in Docker, so it fails outright when the daemon is down.
+   Only the user can start Docker Desktop — you cannot. Finding that out *after* the implementation
+   is finished wastes a round trip, so say it up front, in the same message as the proposal: either
+   "Docker is running, tests will work" or "Docker is not running — please start Docker Desktop
+   before you approve this". Never wait until the tests fail to mention it.
 
    Once implemented: run `./test-before-commit.sh` and report the real result.
 
