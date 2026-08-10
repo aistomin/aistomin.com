@@ -17,6 +17,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - CLAUDE.md
+  - AGENTS.md
   - Dockerfile
   - docker-compose.yml
   - '*.sh'
