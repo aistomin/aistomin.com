@@ -217,6 +217,31 @@ a:hover {
     border-bottom: 1px solid #e1e5e9;
 }
 
+.load-comments {
+    display: block;
+    margin: 1.5rem auto 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.load-comments:hover {
+    background-color: #555;
+}
+
+.comments-privacy-note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
 /* Page styles */
 .page-header {
     text-align: center;
