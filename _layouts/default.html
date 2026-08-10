@@ -34,6 +34,10 @@
         <!-- Loaded only for real visitors. Automation-driven browsers (Playwright,
              Selenium, …) set navigator.webdriver, so our e2e suites — including the
              daily one that runs against the live site — generate no pseudotraffic. -->
+        <!-- Consent Mode v2 with all storage denied keeps gtag.js cookieless:
+             no cookies means no §25 TDDDG consent requirement and no banner.
+             Analytics falls back to anonymous pings, so GA figures are modeled
+             estimates rather than cookie-deduplicated counts. -->
         <script>
             if (!navigator.webdriver) {
                 var gaScript = document.createElement('script');
@@ -43,6 +47,12 @@
 
                 window.dataLayer = window.dataLayer || [];
                 window.gtag = function () { dataLayer.push(arguments); };
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'analytics_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied'
+                });
                 gtag('js', new Date());
                 gtag('config', 'G-8LBQ2S5TJD');
             }

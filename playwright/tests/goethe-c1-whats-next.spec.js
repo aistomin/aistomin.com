@@ -144,15 +144,31 @@ test.describe('Goethe C1 What\'s Next Blog Post', () => {
     await expect(page.locator('.page-title')).toHaveText('Essays About Everything and Nothing');
   });
 
-  test('should display comments section if enabled', async ({ page }) => {
+  test('should load Disqus comments only after the visitor requests them', async ({ page }) => {
+    const disqusRequests = [];
+    page.on('request', (request) => {
+      if (/disqus\.com/.test(request.url())) {
+        disqusRequests.push(request.url());
+      }
+    });
+
     await page.goto('/2025/12/07/goethe-c1-whats-next', { waitUntil: 'domcontentloaded' });
-    
-    // Check that Disqus comments section exists
-    const commentsSection = page.locator('.comments-section');
-    await expect(commentsSection).toBeVisible();
-    
-    // Check for Disqus thread div
-    const disqusThread = page.locator('#disqus_thread');
-    await expect(disqusThread).toBeVisible();
+    await page.waitForLoadState('networkidle');
+
+    // Disqus sets tracking cookies, so nothing from it may load before the
+    // visitor clicks the button ("two-click" pattern, see issue #217)
+    expect(disqusRequests).toEqual([]);
+
+    // The section shows a load button and a privacy note instead of the thread
+    await expect(page.locator('.comments-section')).toBeVisible();
+    const loadButton = page.locator('#load-comments');
+    await expect(loadButton).toBeVisible();
+    await expect(page.locator('.comments-privacy-note')).toBeVisible();
+
+    // The click is the consent: Disqus loads and the button disappears
+    const embedRequest = page.waitForRequest(/disqus\.com/);
+    await loadButton.click();
+    await embedRequest;
+    await expect(loadButton).toBeHidden();
   });
 });

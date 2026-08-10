@@ -39,18 +39,26 @@ layout: default
   {% if page.comments %}
   <div class="comments-section">
     <div id="disqus_thread"></div>
+    <!-- Disqus sets tracking cookies, so it must not load until the visitor
+         asks for it ("two-click" pattern) — the click is the consent. -->
+    <button id="load-comments" class="load-comments" type="button">💬 Load comments</button>
+    <p class="comments-privacy-note">
+      Comments are provided by Disqus, a third-party service, and load only when you request them.
+    </p>
     <script>
       var disqus_config = function () {
         this.page.url = '{{ site.url }}{{ page.url }}';
         this.page.identifier = '{{ page.id | default: page.url }}';
       };
-      (function () {
+      document.getElementById('load-comments').addEventListener('click', function () {
         var d = document,
           s = d.createElement('script');
         s.src = 'https://https-aistomin-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
-      })();
+        this.style.display = 'none';
+        d.querySelector('.comments-privacy-note').style.display = 'none';
+      });
     </script>
     <noscript>
       Please enable JavaScript to view the
