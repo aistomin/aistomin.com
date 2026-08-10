@@ -4,11 +4,20 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    commit-message:
+      prefix: "build"
+      include: "scope"
   - package-ecosystem: npm
     directory: /playwright
     schedule:
       interval: weekly
+    commit-message:
+      prefix: "build"
+      include: "scope"
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
+    commit-message:
+      prefix: "build"
+      include: "scope"
