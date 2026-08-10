@@ -70,8 +70,10 @@ test.describe('Certificates Page', () => {
     await expect(metadata).toContainText('Issued: Munich, 03.09.2025');
     await expect(metadata).toContainText('Certificate No: 2048-AC1A-0002450866');
     await expect(metadata).toContainText('Institution: Goethe-Institut');
-    await expect(metadata).toContainText('My Date of Birth (for verification): 17.05.1985');
     await expect(metadata).toContainText('Verify:');
+
+    // The date of birth must never be published (see issue #218)
+    await expect(page.locator('body')).not.toContainText('Date of Birth');
   });
 
   test('should have working external links', async ({ page }) => {
