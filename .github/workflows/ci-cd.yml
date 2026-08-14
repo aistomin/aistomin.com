@@ -10,8 +10,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: 'pages'
@@ -21,6 +19,12 @@ jobs:
   test:
     name: Build and Test
     runs-on: ubuntu-latest
+    # This job runs third-party code (npm ci, browser downloads) on every pull
+    # request, so it gets no deploy credentials — only what configure-pages needs
+    # to read the Pages base path.
+    permissions:
+      contents: read
+      pages: read
     env:
       JEKYLL_ENV: production
     steps:
@@ -78,6 +82,9 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: test
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
