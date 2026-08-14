@@ -1,9 +1,8 @@
 services:
   jekyll:
-    image: jekyll/jekyll:latest
+    build: .
     ports:
       - '4000:4000'
-      - '35729:35729'
+      - '35729:35729' # livereload
     volumes:
       - .:/srv/jekyll
-    command: jekyll serve --force_polling

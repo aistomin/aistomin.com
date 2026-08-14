@@ -41,16 +41,39 @@ Jekyll 4.4 static site for https://aistomin.com (personal site: home, about, blo
 ## Commands
 
 ```bash
-./start.sh                # rebuild + run dev server in Docker at http://localhost:4000 (-d for background)
+./start.sh                # rebuild image + run dev server with livereload in Docker at http://localhost:4000 (-d for background)
 ./stop.sh                 # docker compose down
 ./run-e2e-tests.sh        # run Playwright against an already-running server
 ./test-before-commit.sh   # full cycle: start -d, wait for :4000, run e2e, stop. Run this before committing.
 ./cleanup_branches.sh     # delete local branches whose remote is gone
 ```
 
-`start.sh` wipes `_site`, `.jekyll-cache`, `.jekyll-metadata` and rebuilds the image, so there is no stale-cache class of bug — if the site looks wrong, it is the source.
+`start.sh` wipes `_site`, `.jekyll-cache`, `.jekyll-metadata` and rebuilds the image
+(`docker compose up --build`, layer-cached so it costs about a second when nothing changed), so
+there is no stale-cache class of bug — if the site looks wrong, it is the source.
 
-Everything above except `cleanup_branches.sh` needs the Docker daemon up — check it with `docker info` before you rely on it, and ask the user to start Docker Desktop if it is down.
+The image comes from the checked-in `Dockerfile`: `ruby:3.2-slim-bookworm`, deliberately the same
+Ruby minor as `ruby-version` in `.github/workflows/ci-cd.yml`, so the site previewed locally is
+built by the same toolchain as production. Move the two together when Ruby is bumped — Dependabot's
+`docker` ecosystem is what will tell you it is time.
+
+Gems are installed into the image at build time (into `/usr/local/bundle`, outside the bind mount),
+so a `Gemfile` change needs a rebuild — which `start.sh` does anyway. `BUNDLE_FROZEN=true` in the
+image stops the container from silently rewriting the committed `Gemfile.lock`; a `Gemfile` edit
+without a matching lock update fails the build instead. Update gems deliberately:
+
+```bash
+docker compose run --rm -e BUNDLE_FROZEN=false jekyll bundle update
+```
+
+Jekyll serves with `--livereload --force_polling` (port 35729), so a saved edit refreshes the
+browser by itself. Polling is required because file-change events do not cross the macOS bind mount
+reliably. Livereload injects a `livereload.js` script tag into every served page, so the local DOM
+differs from production by that one tag — CI runs the same specs against a livereload-free
+production build, which is where fidelity is guaranteed.
+
+Everything above except `cleanup_branches.sh` needs the Docker daemon up — check it with
+`docker info` before you rely on it, and ask the user to start Docker Desktop if it is down.
 
 Non-Docker alternative: `bundle install && bundle exec jekyll serve`.
 
