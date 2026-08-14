@@ -7,6 +7,11 @@ _site/
 # Dependencies
 .bundle/
 vendor/
+playwright/node_modules/
+
+# Playwright output
+playwright/test-results/
+playwright/playwright-report/
 
 # OS generated files
 .DS_Store
