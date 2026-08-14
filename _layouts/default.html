@@ -80,8 +80,19 @@
 
     <footer class="site-footer">
         <div class="footer-content">
-            <p>&copy; 2025–{{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+            <p>&copy; 2025–<span id="footer-year">{{ 'now' | date: "%Y" }}</span> {{ site.title }}. All rights reserved.</p>
         </div>
     </footer>
+    <!-- The year above is rendered at build time, so a deployed page would keep
+         showing a stale year from January 1st until the next redeploy — refresh it
+         from the visitor's clock. -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var year = document.getElementById('footer-year');
+        if (year) {
+          year.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
 </body>
 </html>
