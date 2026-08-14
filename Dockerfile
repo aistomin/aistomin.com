@@ -1,6 +1,6 @@
 # Local dev image. Keep the Ruby minor in step with ci-cd.yml's ruby-version so
 # the site previewed here is built by the same toolchain that builds production.
-FROM ruby:3.2-slim-bookworm
+FROM ruby:4.0-slim-bookworm
 
 # ffi and eventmachine (which livereload runs on) ship no precompiled Linux
 # gems, so the image needs a compiler.
