@@ -83,10 +83,10 @@ test.describe('About Page', () => {
     await expect(stackoverflowLink).toHaveAttribute('href', 'http://stackoverflow.com/users/1842599');
     await expect(stackoverflowLink).toHaveAttribute('aria-label', 'Stack Overflow');
     
-    // Test RSS Feed link
-    const rssLink = socialLinks.nth(5);
-    await expect(rssLink).toHaveAttribute('href', '/feed.xml');
-    await expect(rssLink).toHaveAttribute('aria-label', 'RSS Feed');
+    // Test feed link
+    const feedLink = socialLinks.nth(5);
+    await expect(feedLink).toHaveAttribute('href', '/feed.xml');
+    await expect(feedLink).toHaveAttribute('aria-label', 'Feed');
   });
 
   test('should have working external links', async ({ page }) => {
