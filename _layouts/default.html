@@ -10,7 +10,10 @@
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="author" content="{{ site.author | default: site.title }}">
     {% if site.url %}<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">{% endif %}
-    
+    <!-- jekyll-feed generates an Atom 1.0 feed at /feed.xml; this is what lets
+         readers and browsers discover it without being handed the URL. -->
+    {% feed_meta %}
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
