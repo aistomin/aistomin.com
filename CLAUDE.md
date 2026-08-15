@@ -52,7 +52,7 @@ Jekyll 4.4 static site for https://aistomin.com (personal site: home, about, blo
 (`docker compose up --build`, layer-cached so it costs about a second when nothing changed), so
 there is no stale-cache class of bug — if the site looks wrong, it is the source.
 
-The image comes from the checked-in `Dockerfile`: `ruby:3.2-slim-bookworm`, deliberately the same
+The image comes from the checked-in `Dockerfile`: `ruby:4.0-slim-bookworm`, deliberately the same
 Ruby minor as `ruby-version` in `.github/workflows/ci-cd.yml`, so the site previewed locally is
 built by the same toolchain as production. Move the two together when Ruby is bumped — Dependabot's
 `docker` ecosystem is what will tell you it is time.
@@ -116,7 +116,7 @@ Body content is written as raw HTML inside the markdown files (`<div class="page
 
 ## CI/CD
 
-- `.github/workflows/ci-cd.yml` — on push/PR to `master`: build with `JEKYLL_ENV=production` (Ruby 3.2, Node 22), serve, run the e2e suite, upload the report. Deploy to GitHub Pages runs only on `master` and only if tests pass.
+- `.github/workflows/ci-cd.yml` — on push/PR to `master`: build with `JEKYLL_ENV=production` (Ruby 4.0, Node 22), serve, run the e2e suite, upload the report. Deploy to GitHub Pages runs only on `master` and only if tests pass.
 - `.github/workflows/production-e2e-tests.yml` — daily cron (and manual dispatch) running the same suite against `BASE_URL=https://aistomin.com`.
 - Dependabot keeps `@playwright/test`, gems, and actions bumped; those PRs land as merge commits.
 
