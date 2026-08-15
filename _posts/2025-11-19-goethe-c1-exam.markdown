@@ -5,6 +5,8 @@ date: 2025-11-19 12:00:00 +0200
 excerpt: A couple of months have already passed since I got my Goethe-Zertifikat C1. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.
 keywords: Goethe-Zertifikat C1, Goethe C1 exam, German language exam, C1 exam experience, Goethe-Institut Munich, German certification, language learning, C1 speaking test, C1 writing test, modular Goethe exam
 image: /assets/images/goethe-institut-muenchen.jpg
+header_image: /assets/images/goethe-institut.png
+header_image_alt: Goethe Institut
 comments: true
 ---
 
@@ -47,13 +49,6 @@ comments: true
         text-align: center;
     }
 </style>
-
-<div class="page-header">
-    <div style="text-align: center; margin-bottom: 0.5rem;">
-        <img src="/assets/images/goethe-institut.png" alt="Goethe Institut" class="goethe-logo">
-    </div>
-    <h1 class="page-title">Goethe-Zertifikat C1 — The Exam (Part I)</h1>
-</div>
 
 <div class="page-content">
     <p>A couple of months have already passed since I got my <a href="https://www.goethe.de/ins/de/en/prf/prf/gzc1.html" target="_blank" rel="noopener noreferrer">Goethe-Zertifikat C1</a>. It was a goal that took me several years to achieve. It was not super difficult, but it cost me a significant amount of time and mental effort. Now, with a cool head, I can look back on those events and try to put my experience on paper.</p>
