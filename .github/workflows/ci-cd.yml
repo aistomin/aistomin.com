@@ -11,14 +11,16 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: 'pages'
-  cancel-in-progress: false
-
 jobs:
   test:
     name: Build and Test
     runs-on: ubuntu-latest
+    # Superseded runs of the same ref are pointless — they test a commit that has
+    # already been replaced. Cancelling here is safe: job-level concurrency cannot
+    # reach the deploy job, so a Pages deploy in flight is never interrupted.
+    concurrency:
+      group: test-${{ github.ref }}
+      cancel-in-progress: true
     # This job runs third-party code (npm ci, browser downloads) on every pull
     # request, so it gets no deploy credentials — only what configure-pages needs
     # to read the Pages base path.
@@ -82,6 +84,11 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: test
     runs-on: ubuntu-latest
+    # GitHub Pages allows one deployment at a time, and a deploy must never be
+    # cancelled midway — so deploys queue, and only against other deploys.
+    concurrency:
+      group: 'pages'
+      cancel-in-progress: false
     permissions:
       pages: write
       id-token: write
