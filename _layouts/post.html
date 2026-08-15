@@ -3,11 +3,14 @@ layout: default
 ---
 
 <style>
-  .post-header-wrapper {
-    text-align: center;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #e1e5e9;
-    margin-bottom: 1rem;
+  /* Centering comes from .page-header; only the spacing below the image is ours. */
+  .post-header-logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .post-header-logo img {
+    height: 3rem;
+    width: auto;
   }
 
   .post-date-in-header {
@@ -18,18 +21,22 @@ layout: default
   }
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const pageHeader = document.querySelector('.page-header');
-    if (pageHeader) {
-      const dateDiv = document.createElement('div');
-      dateDiv.className = 'post-date-in-header';
-      dateDiv.innerHTML =
-        '<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>';
-      pageHeader.appendChild(dateDiv);
-    }
-  });
-</script>
+<!-- The header is layout-owned and carries nothing post-specific: the image comes
+     from the post's `header_image` front matter, and a post without one gets just
+     the title and the date. Rendered with Liquid rather than injected on
+     DOMContentLoaded, so crawlers and non-JS readers see the date and there is no
+     layout shift. -->
+<div class="page-header">
+  {% if page.header_image %}
+  <div class="post-header-logo">
+    <img src="{{ page.header_image }}" alt="{{ page.header_image_alt }}">
+  </div>
+  {% endif %}
+  <h1 class="page-title">{{ page.title }}</h1>
+  <div class="post-date-in-header">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </div>
+</div>
 
 {{ content }}
 
