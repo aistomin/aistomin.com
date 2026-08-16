@@ -17,7 +17,6 @@ gem "jekyll", "~> 4.4.1"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-gist", "~> 1.5"
   gem "jekyll-sitemap", "~> 1.4"
 end
 
