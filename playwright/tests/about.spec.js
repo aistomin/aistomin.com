@@ -15,7 +15,7 @@ test.describe('About Page', () => {
 
   test('should display all required elements on about page', async ({ page }) => {
     // Navigate to about page
-    await page.goto('/about', { waitUntil: 'domcontentloaded' });
+    await page.goto('/about.html', { waitUntil: 'domcontentloaded' });
     
     // 1. Test title exists
     const title = page.locator('.page-title');
@@ -54,7 +54,7 @@ test.describe('About Page', () => {
 
   test('should display correct social links', async ({ page }) => {
     // Navigate to about page
-    await page.goto('/about', { waitUntil: 'domcontentloaded' });
+    await page.goto('/about.html', { waitUntil: 'domcontentloaded' });
     
     const socialLinks = page.locator('.social-links a');
     
@@ -80,7 +80,7 @@ test.describe('About Page', () => {
     
     // Test Stack Overflow link
     const stackoverflowLink = socialLinks.nth(4);
-    await expect(stackoverflowLink).toHaveAttribute('href', 'http://stackoverflow.com/users/1842599');
+    await expect(stackoverflowLink).toHaveAttribute('href', 'https://stackoverflow.com/users/1842599');
     await expect(stackoverflowLink).toHaveAttribute('aria-label', 'Stack Overflow');
     
     // Test feed link
@@ -91,7 +91,7 @@ test.describe('About Page', () => {
 
   test('should have working external links', async ({ page }) => {
     // Navigate to about page
-    await page.goto('/about', { waitUntil: 'domcontentloaded' });
+    await page.goto('/about.html', { waitUntil: 'domcontentloaded' });
     
     // Test Russian-Slavic University link
     const universityLink = page.locator('a:has-text("Russian-Slavic University")');

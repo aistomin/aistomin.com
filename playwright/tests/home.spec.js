@@ -79,7 +79,7 @@ test.describe('Home Page', () => {
     
     // Test Stack Overflow link
     const stackoverflowLink = socialLinks.nth(4);
-    await expect(stackoverflowLink).toHaveAttribute('href', 'http://stackoverflow.com/users/1842599');
+    await expect(stackoverflowLink).toHaveAttribute('href', 'https://stackoverflow.com/users/1842599');
     await expect(stackoverflowLink).toHaveAttribute('aria-label', 'Stack Overflow');
     
     // Test feed link
