@@ -21,5 +21,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - '*.sh'
+  # Build source for favicon.ico, not an asset the site serves.
+  - favicon-source.svg
 
 future: true
