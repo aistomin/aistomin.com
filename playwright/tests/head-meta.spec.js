@@ -55,5 +55,26 @@ test.describe('Head meta tags', () => {
       // og:logo is not part of the Open Graph protocol.
       await expect(page.locator('meta[property="og:logo"]')).toHaveCount(0);
     });
+
+    test(`should declare exactly one favicon on ${path}`, async ({ page }) => {
+      await page.goto(path, { waitUntil: 'domcontentloaded' });
+
+      const icon = page.locator('link[rel="icon"]');
+      await expect(icon).toHaveCount(1);
+      await expect(icon).toHaveAttribute('href', '/favicon.ico');
+      await expect(icon).toHaveAttribute('type', 'image/x-icon');
+    });
   }
+
+  test('should serve the declared favicon', async ({ request }) => {
+    const response = await request.get('/favicon.ico');
+    expect(response.status()).toBe(200);
+  });
+
+  test('should not publish an unreferenced svg favicon', async ({ request }) => {
+    // The .ico carries this exact design, so a second unlinked copy is dead
+    // weight that still gets published. Keep it deleted.
+    const response = await request.get('/assets/images/favicon.svg');
+    expect(response.status()).toBe(404);
+  });
 });
