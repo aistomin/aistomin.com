@@ -16,18 +16,20 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <!-- Same expression as the canonical link above on purpose: two spellings of
+         the same page URL is what makes crawlers treat them as two pages. -->
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
     {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}">{% endif %}
-    {% if site.url %}<meta property="og:logo" content="{{ site.url }}/favicon.ico">{% endif %}
-    
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
-    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="twitter:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
-    {% if page.image %}<meta property="twitter:image" content="{{ site.url }}{{ page.image }}">{% endif %}
+    <!-- Twitter cards are read from name=, not the property= that Open Graph uses. -->
+    <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
+    {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">{% endif %}
     
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
@@ -69,9 +71,12 @@
                 <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
                 <ul class="nav-menu">
                     <li><a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-                    <li><a href="{{ '/about' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a></li>
-                    <li><a href="{{ '/blog' | relative_url }}" {% if page.url contains '/blog' or page.layout == 'post' %}class="active"{% endif %}>Blog</a></li>
-                    <li><a href="{{ '/certificates' | relative_url }}" {% if page.url contains '/certificates' %}class="active"{% endif %}>Certificates</a></li>
+                    <!-- Link the same URL the canonical link advertises — Jekyll emits
+                         about.html, so an extensionless /about only works by server
+                         fallback and hands crawlers a second spelling of the page. -->
+                    <li><a href="{{ '/about.html' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a></li>
+                    <li><a href="{{ '/blog.html' | relative_url }}" {% if page.url contains '/blog' or page.layout == 'post' %}class="active"{% endif %}>Blog</a></li>
+                    <li><a href="{{ '/certificates.html' | relative_url }}" {% if page.url contains '/certificates' %}class="active"{% endif %}>Certificates</a></li>
                 </ul>
             </div>
         </nav>
