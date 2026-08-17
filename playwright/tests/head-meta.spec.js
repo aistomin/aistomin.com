@@ -66,15 +66,33 @@ test.describe('Head meta tags', () => {
     });
   }
 
-  test('should serve the declared favicon', async ({ request }) => {
+  test('should serve the declared favicon as a real ICO', async ({ request }) => {
     const response = await request.get('/favicon.ico');
     expect(response.status()).toBe(200);
+
+    // The file used to be a PNG wearing an .ico extension, which the extension,
+    // the link tag's type= and the server's Content-Type all misreported. Assert
+    // the bytes, since those are the only part of that story nobody can fake:
+    // an ICO starts 00 00 01 00, a PNG starts 89 50 4E 47.
+    const body = await response.body();
+    expect(Array.from(body.subarray(0, 4))).toEqual([0x00, 0x00, 0x01, 0x00]);
+
+    // Offset 4 holds the number of images in the container. A renamed single
+    // bitmap cannot satisfy this, which is the point of checking it.
+    expect(body.readUInt16LE(4)).toBeGreaterThanOrEqual(2);
   });
 
   test('should not publish an unreferenced svg favicon', async ({ request }) => {
     // The .ico carries this exact design, so a second unlinked copy is dead
     // weight that still gets published. Keep it deleted.
     const response = await request.get('/assets/images/favicon.svg');
+    expect(response.status()).toBe(404);
+  });
+
+  test('should not publish the favicon build source', async ({ request }) => {
+    // favicon-source.svg is what build-favicon.sh renders the icon from. It is
+    // excluded in _config.yml; this is the guard that says so out loud.
+    const response = await request.get('/favicon-source.svg');
     expect(response.status()).toBe(404);
   });
 });
