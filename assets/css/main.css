@@ -115,15 +115,19 @@ a:hover {
     font-weight: 300;
 }
 
-.hero-photo {
+.page-photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 2rem auto;
+    margin: 0 auto 2rem auto;
     display: block;
     border: 4px solid #f8f9fa;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.page-photo-portrait {
+    object-position: center 30%;
 }
 
 .hero-description {
@@ -271,30 +275,6 @@ a:hover {
 
 .page-content li {
     margin-bottom: 0.5rem;
-}
-
-.about-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 30%;
-    margin: 0 auto 2rem auto;
-    display: block;
-    border: 4px solid #f8f9fa;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.blog-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center center;
-    margin: 0 auto 2rem auto;
-    display: block;
-    border: 4px solid #f8f9fa;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .blog-description {

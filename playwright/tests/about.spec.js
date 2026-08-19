@@ -23,7 +23,7 @@ test.describe('About Page', () => {
     await expect(title).toHaveText('Wandering Between Code, Chords and Schelling');
     
     // 2. Test picture exists
-    const photo = page.locator('.about-photo');
+    const photo = page.locator('.page-photo');
     await expect(photo).toBeVisible();
     await expect(photo).toHaveAttribute('src', '/assets/images/me_young.jpg');
     await expect(photo).toHaveAttribute('alt', 'Andrej in younger years');
