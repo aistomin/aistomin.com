@@ -9,7 +9,7 @@ description: "Learn about Andrej Istomin — a software engineer from Bishkek no
 </div>
 
 <div class="page-content">
-    <img src="/assets/images/me_young.jpg" alt="Andrej in younger years" class="about-photo" onerror="this.style.display='none'">
+    <img src="/assets/images/me_young.jpg" alt="Andrej in younger years" class="page-photo page-photo-portrait" onerror="this.style.display='none'">
     
     <p>I grew up in Bishkek, Kyrgyz SSR, in a world that was rapidly changing. The Soviet Union collapsed when I was six. Maybe that's why I've always been drawn to understanding how systems work—and what happens when they don't. At a specialized physics-mathematical lyceum, I learned to think in patterns and abstractions. But it was my father who introduced me to Deep Purple, and that changed everything. Around the same time, I discovered Dostoevsky. Both taught me that beneath technical precision, there's always something deeper—emotion, meaning, chaos.</p>
 

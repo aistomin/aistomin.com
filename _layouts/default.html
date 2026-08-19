@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% capture meta_title %}{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}{% endcapture -%}
+    {%- capture meta_description %}{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}{% endcapture -%}
+    {%- comment -%}
+      page_path is the one spelling of the URL that canonical, og:url and twitter:url
+      all share: two spellings make crawlers treat them as two competing pages.
+    {%- endcomment -%}
+    {%- assign page_path = page.url | replace: 'index.html', '' -%}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+    <title>{{ meta_title }}</title>
 
-    <meta name="description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta name="description" content="{{ meta_description }}">
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="author" content="{{ site.author | default: site.title }}">
-    {% if site.url %}<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">{% endif %}
+    {% if site.url %}<link rel="canonical" href="{{ site.url }}{{ page_path }}">{% endif %}
     <!-- jekyll-feed generates an Atom 1.0 feed at /feed.xml; this is what lets
          readers and browsers discover it without being handed the URL. -->
     {% feed_meta %}
 
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-    <!-- Same expression as the canonical link above on purpose: two spellings of
-         the same page URL is what makes crawlers treat them as two pages. -->
-    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta property="og:url" content="{{ site.url }}{{ page_path }}">
+    <meta property="og:title" content="{{ meta_title }}">
+    <meta property="og:description" content="{{ meta_description }}">
     {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}">{% endif %}
 
     <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta name="twitter:url" content="{{ site.url }}{{ page_path }}">
+    <meta name="twitter:title" content="{{ meta_title }}">
+    <meta name="twitter:description" content="{{ meta_description }}">
     {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">{% endif %}
     
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">

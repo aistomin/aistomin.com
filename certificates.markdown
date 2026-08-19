@@ -9,7 +9,7 @@ description: "Professional certifications and achievements of Andrej Istomin, in
 </div>
 
 <div class="page-content">
-    <img src="/assets/images/me-and-guitar.png" alt="Andrej with guitar" class="about-photo" onerror="this.style.display='none'">
+    <img src="/assets/images/me-and-guitar.png" alt="Andrej with guitar" class="page-photo page-photo-portrait" onerror="this.style.display='none'">
     
     <p>Learning never stops. Here's what I've earned along the way:</p>
     

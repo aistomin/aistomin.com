@@ -27,7 +27,7 @@ test.describe('Home Page', () => {
     await expect(subheader).toHaveText('Software Engineer, Musician & Wandering Philosopher');
     
     // 3. Test picture exists
-    const photo = page.locator('.hero-photo');
+    const photo = page.locator('.page-photo');
     await expect(photo).toBeVisible();
     await expect(photo).toHaveAttribute('src', '/assets/images/home.jpg');
     await expect(photo).toHaveAttribute('alt', 'Andrej Istomin');
